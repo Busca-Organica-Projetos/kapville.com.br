@@ -86,12 +86,10 @@ $borg->cssCompress(array(
 
                             <div class="logo-google">
                                 <span class="pre">
-                                    <p class="font">avaliações</p>
+                                    <span class="font">avaliações</span>
                                 </span>
                                 <span class="marca">
-                                    <span class="g-b font">
-                                        <p>G
-                                    </span><span class="g-r font">o</span><span class="g-y font">o</span><span class="g-b font">g</span><span class="g-g font">l</span><span class="g-r font">e</span><span class="kap font">Kapville</p></span>
+                                    <span class="g-b font">G</span><span class="g-r font">o</span><span class="g-y font">o</span><span class="g-b font">g</span><span class="g-g font">l</span><span class="g-r font">e</span><span class="kap font">Kapville</span>
                                 </span>
                             </div>
                         </div>
@@ -494,7 +492,7 @@ $borg->cssCompress(array(
             "download_17_1x.webp"
         ];
         ?>
-        <section id="capacho-personalizado">
+        <section id="piso-fulget">
             <div class="container">
                 <div class="flex">
 

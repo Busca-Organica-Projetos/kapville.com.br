@@ -69,7 +69,7 @@
                                 <img src="https://www.buscaorganica.com.br/ast/img/selo-dispositivo-movel.jpg" alt="Dispositivos Móveis">
                             </a>
                         </div>
-                        <a rel="follow" href="https://www.buscaorganica.com.br"
+                        <a rel="noopener" href="https://www.buscaorganica.com.br"
                             target="_blank" title="Busca Orgânica - Crescimento para sua empresa através do Google">
                             <img src="https://www.buscaorganica.com.br/ast/img/selo-busca-organica.png" alt="Busca Orgânica">
                         </a>
