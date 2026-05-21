@@ -768,5 +768,22 @@ $produtos = [
                             <li><strong>Ruído:</strong> 58 db</li>
                             <li><strong>Vazão de ar/hora:</strong> 240 m³/h</li>
                             <li><strong>Filtro:</strong> PVC</li>
-                            <li><strong>Rodízio:</strong> Omnidirecional (360°)</li>
+                            <li><strong>Rodízio:</strong> Omnidirecional (360°)</li><li><strong>Portátil:</strong> Sim</li>
+                            <li><strong>Garantia:</strong> 1 Ano</li>
+                            <li><strong>Acessórios:</strong> Manual de instrução</li>
+                            <li><strong>Mais informações:</strong> Limpeza de filtro 1x na semana</li>
+                            <li><strong>Recomendações:</strong> Colocar o equipamento com pelo menos 30 cm de distância da parede</li>
+                        </ul>
+
+                        <a href="' . $linkWpp . '" target="_blank" rel="noopener" class="btn-fale-conosco" data-click-track="WhatsApp - Soluções">Fale Conosco</a>
+
+                    </div>
+                </article>
+
+            </div>
+        '
+    ],
+
+];
+?>
        
