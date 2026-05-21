@@ -1,0 +1,298 @@
+/* ──────────────────────────────────────────────────────────────
+   SOLUÇÕES — Página de produtos (Desumidificadores Desidrat)
+   Estrutura por produto:
+       .produto-item
+           ├── .produto-galeria    (col esquerda — grid de miniaturas)
+           └── .produto-info       (col direita — texto e specs)
+   ────────────────────────────────────────────────────────────── */
+
+#solucoes-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+  /* Mantém a proporção real da imagem (1169x365 → ~3.2:1) — nunca corta */
+  aspect-ratio: 1169 / 365;
+  width: 100%;
+  padding: 40px 16px;
+  color: #fff;
+  text-align: center;
+  background-color: #044757;
+  background-image:
+    linear-gradient(rgba(20, 16, 14, 0), rgba(20, 16, 14, 0)),
+    url(imagens/main/solucoes/solucoes-banner.webp);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+#solucoes-banner .container {
+  width: 100%;
+}
+
+#solucoes-banner h1,
+#solucoes-banner h2 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  line-height: 1.2;
+  margin: 0;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+#solucoes-banner p {
+  font-size: clamp(0.95rem, 1.4vw, 1.15rem);
+  line-height: 1.55;
+  margin: 14px 0 0;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* ─── Tablet landscape ─────────────────────────────────── */
+@media (max-width: 991px) {
+  #solucoes-banner {
+    margin-top: 100px;
+  }
+}
+
+/* ─── Tablet portrait ──────────────────────────────────── */
+@media (max-width: 768px) {
+  #solucoes-banner {
+    margin-top: 90px;
+    padding: 24px 14px;
+  }
+}
+
+/* ─── Mobile grande ────────────────────────────────────── */
+@media (max-width: 580px) {
+  #solucoes-banner {
+    margin-top: 80px;
+    padding: 20px 12px;
+  }
+}
+
+/* ─── Mobile pequeno (320–430px) ───────────────────────── */
+@media (max-width: 430px) {
+  #solucoes-banner {
+    margin-top: 70px;
+    padding: 16px 10px;
+  }
+}
+
+#produtos {
+  margin-bottom: 30px;
+}
+
+#produtos .container {
+  max-width: 1180px;
+}
+
+/* ─── Cartão de produto ───────────────────────────────────────── */
+#produtos .produto-item {
+  display: flex;
+  gap: 36px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 32px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  align-items: flex-start;
+}
+
+#produtos .produto-item:last-child {
+  margin-bottom: 0;
+}
+
+#produtos .produto-info {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+#produtos .produto-titulo {
+  font-family: var(--font, "Roboto", sans-serif);
+  font-size: clamp(1.3rem, 2.2vw, 1.8rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--main, #007f91);
+  margin: 0 0 24px;
+  letter-spacing: -0.01em;
+}
+
+#produtos .bloco-titulo {
+  font-family: var(--font, "Roboto", sans-serif);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #333;
+  margin: 26px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--main, #007f91);
+  display: inline-block;
+}
+
+#produtos .produto-info p {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #444;
+  margin: 0 0 12px;
+}
+
+#produtos .indicacao {
+  font-size: 0.95rem;
+  color: #333;
+  background: #eef7f8;
+  padding: 10px 14px;
+  border-left: 3px solid var(--main, #007f91);
+  border-radius: 0 4px 4px 0;
+  margin: 18px 0 !important;
+}
+
+#produtos .indicacao strong {
+  color: var(--main, #007f91);
+}
+
+/* ─── Bullets com marca verde (estilo do print) ──────────────── */
+#produtos .bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px;
+}
+
+#produtos .bullets li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+#produtos .bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 8px;
+  height: 8px;
+  background: #5fb35f;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+/* Variante para a tabela de informações técnicas (chave: valor) */
+#produtos .bullets-info li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 0.9rem;
+  border-bottom: 1px dashed #ececec;
+  padding: 6px 0 6px 22px;
+  margin-bottom: 0;
+}
+
+#produtos .bullets-info li:last-child {
+  border-bottom: none;
+}
+
+#produtos .bullets-info li::before {
+  top: 1.05em;
+  background: var(--secondary, #f6ab1a);
+}
+
+#produtos .bullets-info li strong {
+  color: #222;
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+/* ─── Botão Fale Conosco (WhatsApp) ─────────────────────── */
+#produtos .btn-fale-conosco {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 14px 34px;
+  background: var(--secondary, #f6ab1a);
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+#produtos .btn-fale-conosco:hover {
+  background: var(--secondary-strong, #d49619);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+#produtos .btn-fale-conosco:active {
+  transform: translateY(0);
+}
+
+/* ──────────────────────────────────────────────────────────────
+   RESPONSIVO
+   ────────────────────────────────────────────────────────────── */
+
+@media (max-width: 1270px) {
+  #solucoes-banner {
+    margin-top: 180px;
+  }
+}
+
+@media (max-width: 936px) {
+  #solucoes-banner {
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 790px) {
+  #solucoes-banner {
+    margin-top: 230px;
+  }
+}
+
+@media (max-width: 770px) {
+  #solucoes-banner {
+    margin-top: 0;
+  }
+}
+
+
+
+@media (max-width: 991px) {
+  #produtos {
+    padding: 50px 0 60px;
+  }
+  #produtos .produto-item {
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+  }
+  #produtos .produto-galeria {
+    position: static;
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  #produtos .galeria-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  #produtos .produto-item {
+    padding: 18px;
+  }
+  #produtos .galeria-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+  #produtos .bloco-titulo {
+    font-size: 0.95rem;
+  }
+  #produtos .bullets li,
+  #produtos .bullets-info li {
+    font-size: 0.88rem;
+  }
+}

@@ -1,0 +1,851 @@
+/* ──────────────────────────────────────────────────────────────
+   HOME — KAPVILLE
+   Estrutura:  #banner  →  .banner-wrapper (texto + imagem lado a lado)
+   ────────────────────────────────────────────────────────────── */
+
+#banner {
+  position: relative;
+  overflow: hidden;
+  min-height: 560px;
+  color: #fff;
+  /* Substitua o arquivo abaixo pela foto real do ambiente (varanda).
+       Enquanto não houver imagem, o gradiente serve de fallback. */
+  background:
+    linear-gradient(rgba(20, 16, 14, 0), rgba(20, 16, 14, 0)),
+    url(imagens/main/home/banner/banner.webp) center/cover no-repeat;
+}
+
+#banner .container {
+  position: relative;
+  z-index: 2;
+}
+
+#banner .banner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px;
+  min-height: 500px;
+}
+
+/* ─── Texto (coluna esquerda) ─────────────────────────────────── */
+#banner .banner-texto {
+  flex: 1 1 55%;
+  max-width: 620px;
+}
+
+#banner .banner-titulo {
+  font-family: var(--font, "Roboto", sans-serif);
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--secondary, #f6ab1a);
+  margin: 0 0 24px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+  letter-spacing: -0.01em;
+}
+
+#banner .banner-subtitulo {
+  font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+  font-weight: 600;
+  line-height: 1.55;
+  color: #ffffff;
+  margin: 0 0 32px;
+  max-width: 460px;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* ─── Imagem da mulher (coluna direita) ───────────────────────── */
+#banner .banner-img {
+  flex: 0 0 auto;
+  max-width: 48%;
+  align-self: flex-end;
+  line-height: 0;
+}
+
+#banner .banner-img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  max-height: 560px;
+  object-fit: contain;
+  filter: drop-shadow(-12px 8px 24px rgba(0, 0, 0, 0.35));
+}
+
+/* ──────────────────────────────────────────────────────────────
+   RESPONSIVO
+   ────────────────────────────────────────────────────────────── */
+@media (max-width: 991px) {
+  #banner {
+    min-height: 480px;
+    padding: 48px 0 0;
+  }
+  #banner .banner-wrapper {
+    gap: 16px;
+    min-height: 420px;
+  }
+  #banner .banner-img {
+    max-width: 42%;
+  }
+  #banner .banner-img img {
+    max-height: 460px;
+  }
+}
+
+@media (max-width: 768px) {
+  #banner {
+    min-height: auto;
+    padding: 48px 0 0;
+  }
+  #banner .banner-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+    min-height: auto;
+  }
+  #banner .banner-texto {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  #banner .banner-subtitulo {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #banner .banner-img {
+    max-width: 75%;
+    align-self: center;
+  }
+  #banner .banner-img img {
+    max-height: 380px;
+  }
+}
+
+@media (max-width: 480px) {
+  #banner .banner-titulo {
+    font-size: 1.8rem;
+  }
+  #banner .banner-subtitulo {
+    font-size: 0.95rem;
+  }
+  #banner .banner-cta {
+    padding: 14px 28px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
+  #banner .banner-img {
+    max-width: 90%;
+  }
+}
+
+/* ──────────────────────────────────────────────────────────────
+   QUEM SOMOS
+   Estrutura:  #quem-somos  →  col-lg-5 .box-text  +  col-lg-7 .box-img
+   ────────────────────────────────────────────────────────────── */
+
+#quem-somos {
+  padding: 90px 0 70px;
+  background: var(--dark-white);
+}
+
+#quem-somos .flex {
+  align-items: center;
+}
+
+/* ─── Coluna esquerda — texto ──────────────────────────────────── */
+#quem-somos .box-text {
+  max-width: 480px;
+  margin-left: auto;
+  padding: 0 10px;
+}
+
+#quem-somos .titulo {
+  font-family: var(--font, "Roboto", sans-serif);
+  font-size: clamp(1.7rem, 2.6vw, 2.2rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--main, #007f91);
+  margin: 0 0 22px;
+  letter-spacing: -0.01em;
+}
+
+#quem-somos .descricao {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #555;
+  margin: 0 0 18px;
+}
+
+#quem-somos .descricao strong {
+  color: #333;
+  font-weight: 700;
+}
+
+#quem-somos .produtos {
+  font-size: 0.95rem;
+  color: var(--main, #007f91);
+  font-weight: 600;
+  margin: 0 0 26px;
+  letter-spacing: 0.01em;
+}
+
+#quem-somos .info-loja {
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding-top: 18px;
+  margin-top: 4px;
+}
+
+#quem-somos .loja-titulo {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #8a8a8a;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+
+#quem-somos .loja-endereco {
+  font-size: 0.85rem;
+  color: #b0b0b0;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+/* ─── Coluna direita — imagem ──────────────────────────────────── */
+#quem-somos .box-img {
+  line-height: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+#quem-somos .box-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ──────────────────────────────────────────────────────────────
+   RESPONSIVO — QUEM SOMOS
+   ────────────────────────────────────────────────────────────── */
+@media (max-width: 991px) {
+  #quem-somos {
+    padding: 60px 0 50px;
+  }
+  #quem-somos .flex {
+    gap: 30px;
+  }
+  #quem-somos .box-text {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #quem-somos {
+    padding: 48px 0;
+  }
+  #quem-somos .flex {
+    flex-direction: column;
+    gap: 28px;
+  }
+  #quem-somos .box-text {
+    max-width: 100%;
+    padding: 0;
+    text-align: left;
+  }
+  #quem-somos .box-img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #quem-somos {
+    padding: 36px 0;
+  }
+  #quem-somos .titulo {
+    font-size: 1.55rem;
+  }
+  #quem-somos .descricao,
+  #quem-somos .produtos {
+    font-size: 0.9rem;
+  }
+}
+
+/* ──────────────────────────────────────────────────────────────
+   AVALIAÇÕES — Google Reviews
+   Estrutura:  #avaliacoes  →  .titulo + .logo-google + .cards-grid (3 colunas)
+   ────────────────────────────────────────────────────────────── */
+
+#avaliacoes {
+  padding: 40px 5px;
+  background: #fff;
+  text-align: center;
+}
+
+#avaliacoes .titulo {
+  font-family: var(--font, "Roboto", sans-serif);
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #5e5e5e;
+  margin: 0 0 28px;
+}
+
+#avaliacoes .titulo .marca,
+#avaliacoes .titulo .pre {
+  font-size: 40px;
+}
+
+#avaliacoes .font {
+  margin: 0;
+  font-size: 50px;
+}
+
+/* ─── Logo "avaliações Google Kapville" ───────────────────────── */
+#avaliacoes .logo-google {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  margin: 0 auto 50px;
+  line-height: 1.05;
+}
+
+#avaliacoes .logo-google .pre {
+  font-size: 1rem;
+  color: #7da3d4;
+  letter-spacing: 0.04em;
+  margin-bottom: 0;
+  font-style: italic;
+  font-weight: 400;
+}
+
+#avaliacoes .logo-google .marca {
+  font-size: 2.2rem;
+  font-weight: 700;
+  font-family: "Product Sans", Arial, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* Cores oficiais do Google + Kapville em azul Google */
+#avaliacoes .logo-google .marca .g-b {
+  color: #4285f4;
+} /* G e g — azul Google */
+#avaliacoes .logo-google .marca .g-r {
+  color: #ea4335;
+} /* o e e — vermelho Google */
+#avaliacoes .logo-google .marca .g-y {
+  color: #fbbc05;
+} /* o — amarelo Google */
+#avaliacoes .logo-google .marca .g-g {
+  color: #34a853;
+} /* l — verde Google */
+#avaliacoes .logo-google .marca .kap {
+  color: #4285f4; /* Kapville — azul Google (mesmo do G) */
+  margin-left: 2px;
+}
+
+#avaliacoes .box-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#avaliacoes .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  min-height: 235px;
+  min-width: 362.66px;
+  background: var(--dark-white);
+  border-radius: 5px;
+  text-align: left;
+}
+
+#avaliacoes .card .header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#avaliacoes .card .header .box-name {
+  justify-self: start;
+  text-wrap: nowrap;
+}
+
+#avaliacoes .card .header .box-name p {
+  margin: 0;
+  padding: 0;
+}
+
+#avaliacoes .card .header .icon-google {
+  justify-self: right;
+}
+
+#avaliacoes .card .header .icon-google img {
+  width: 20px;
+}
+
+#avaliacoes .card .header .name {
+  font-size: 14px;
+  font-weight: 700;
+}
+#avaliacoes .card .header .data {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--grey);
+}
+
+#avaliacoes .card .stars {
+  margin-top: 10px;
+  font-size: 17px;
+  color: #f6ab1a;
+}
+
+@media (max-width: 1220px) {
+  #avaliacoes .box-cards {
+    gap: 10px;
+  }
+
+  #avaliacoes .card {
+    min-width: 105%;
+    height: 100%;
+  }
+
+  #avaliacoes .card .box-name {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #avaliacoes .card .box-name .icon-google {
+    justify-self: left;
+  }
+}
+
+#grama-animais {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 560px;
+  background:
+    linear-gradient(rgba(20, 16, 14, 0), rgba(20, 16, 14, 0)),
+    url(imagens/main/home/grama-animais/grama-animais-banner.webp) center/cover no-repeat;
+}
+
+#grama-animais .box-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--white);
+}
+
+#grama-animais .box-text h2 {
+  font-size: 48px;
+}
+
+#atuacao {
+  text-align: center;
+  padding: 40px 10px;
+  color: var(--main);
+}
+
+#atuacao h2:first-child {
+  text-align: center;
+  font-size: 50px;
+  margin: 0 0 40px 0;
+  color: #494949;
+}
+
+#atuacao .card img {
+  width: 360px;
+}
+
+/* ──────────────────────────────────────────────────────────────
+   GRAMA SINTÉTICA + CAPACHO PERSONALIZADO
+   (mesma estrutura visual: kicker + título + descrição + carrossel)
+   ────────────────────────────────────────────────────────────── */
+
+#grama-sintetica,
+#capacho-personalizado {
+  padding: 60px 0;
+  background: linear-gradient(120deg, #044757 0%, #066574 45%, #07788a 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+#grama-sintetica .flex,
+#capacho-personalizado .flex {
+  align-items: stretch;
+  gap: 20px;
+}
+
+/* ─── Área 1: kicker + título + parágrafo ────────────────────── */
+#grama-sintetica .area1,
+#capacho-personalizado .area1 {
+  padding: 10px 0;
+}
+
+#grama-sintetica .area1 .kicker,
+#capacho-personalizado .area1 .kicker {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #c8d8db;
+  margin: 0 0 14px;
+  letter-spacing: 0.02em;
+}
+
+#grama-sintetica .area1 .titulo,
+#capacho-personalizado .area1 .titulo {
+  font-size: clamp(1.6rem, 2.6vw, 2rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--secondary, #f6ab1a);
+  margin: 0 0 24px;
+}
+
+#grama-sintetica .area1 p,
+#capacho-personalizado .area1 p {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #fff;
+  margin: 0;
+}
+
+#grama-sintetica .area1 p strong,
+#capacho-personalizado .area1 p strong {
+  color: var(--secondary, #f6ab1a);
+  font-weight: 700;
+}
+
+/* ─── Área 2: descrição extra + botões ───────────────────────── */
+#grama-sintetica .area2,
+#capacho-personalizado .area2 {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#grama-sintetica .area2 p,
+#capacho-personalizado .area2 p {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #fff;
+  margin: 0 0 14px;
+}
+
+#grama-sintetica .area2 p strong,
+#capacho-personalizado .area2 p strong {
+  font-weight: 700;
+  color: #fff;
+}
+
+#grama-sintetica .area2 .local,
+#capacho-personalizado .area2 .local {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+  letter-spacing: 0.02em;
+}
+
+#grama-sintetica .area2 .btn-catalogo,
+#grama-sintetica .area2 .btn-orcamento,
+#capacho-personalizado .area2 .btn-catalogo,
+#capacho-personalizado .area2 .btn-orcamento {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+  margin-bottom: 12px;
+  min-width: 200px;
+}
+
+#grama-sintetica .area2 .btn-catalogo,
+#capacho-personalizado .area2 .btn-catalogo {
+  background: #2589a3;
+  color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+#grama-sintetica .area2 .btn-catalogo:hover,
+#capacho-personalizado .area2 .btn-catalogo:hover {
+  background: #1d7184;
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+#grama-sintetica .area2 .btn-orcamento,
+#capacho-personalizado .area2 .btn-orcamento {
+  background: var(--secondary, #f6ab1a);
+  color: #fff;
+  font-size: 1.15rem;
+  padding: 14px 34px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+}
+
+#grama-sintetica .area2 .btn-orcamento:hover,
+#capacho-personalizado .area2 .btn-orcamento:hover {
+  background: var(--secondary-strong, #d49619);
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+/* ─── Área 3: carrossel ──────────────────────────────────────── */
+#grama-sintetica .area3,
+#capacho-personalizado .area3 {
+  height: 100%;
+  min-height: 380px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  line-height: 0;
+}
+
+#grama-sintetica .area3 .carrossel-gramas,
+#capacho-personalizado .area3 .carrossel-gramas {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#grama-sintetica .area3 .carrossel-viewport,
+#capacho-personalizado .area3 .carrossel-viewport {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+#grama-sintetica .area3 .carrossel-track,
+#capacho-personalizado .area3 .carrossel-track {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+#grama-sintetica .area3 .carrossel-track .slide,
+#capacho-personalizado .area3 .carrossel-track .slide {
+  flex: 0 0 100%;
+  max-width: 100%;
+  height: 100%;
+  line-height: 0;
+}
+
+#grama-sintetica .area3 .carrossel-track .slide img,
+#capacho-personalizado .area3 .carrossel-track .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Botões prev / next */
+#grama-sintetica .area3 .carrossel-gramas .prev,
+#grama-sintetica .area3 .carrossel-gramas .next,
+#capacho-personalizado .area3 .carrossel-gramas .prev,
+#capacho-personalizado .area3 .carrossel-gramas .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 38px;
+  height: 38px;
+  background: var(--secondary, #f6ab1a);
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.2s ease, transform 0.15s ease, opacity 0.2s ease;
+  z-index: 5;
+}
+
+#grama-sintetica .area3 .carrossel-gramas .prev,
+#capacho-personalizado .area3 .carrossel-gramas .prev {
+  left: 10px;
+}
+
+#grama-sintetica .area3 .carrossel-gramas .next,
+#capacho-personalizado .area3 .carrossel-gramas .next {
+  right: 10px;
+}
+
+#grama-sintetica .area3 .carrossel-gramas .prev:hover,
+#grama-sintetica .area3 .carrossel-gramas .next:hover,
+#capacho-personalizado .area3 .carrossel-gramas .prev:hover,
+#capacho-personalizado .area3 .carrossel-gramas .next:hover {
+  background: var(--secondary-strong, #d49619);
+}
+
+#grama-sintetica .area3 .carrossel-gramas .prev:active,
+#grama-sintetica .area3 .carrossel-gramas .next:active,
+#capacho-personalizado .area3 .carrossel-gramas .prev:active,
+#capacho-personalizado .area3 .carrossel-gramas .next:active {
+  transform: translateY(-50%) scale(0.92);
+}
+
+#grama-sintetica .area3 .carrossel-gramas .prev svg,
+#grama-sintetica .area3 .carrossel-gramas .next svg,
+#capacho-personalizado .area3 .carrossel-gramas .prev svg,
+#capacho-personalizado .area3 .carrossel-gramas .next svg {
+  display: block;
+  pointer-events: none;
+}
+
+/* ──────────────────────────────────────────────────────────────
+   RESPONSIVO — GRAMA + CAPACHO
+   ────────────────────────────────────────────────────────────── */
+@media (max-width: 991px) {
+  #grama-sintetica .flex,
+  #capacho-personalizado .flex {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  #grama-sintetica .area3,
+  #capacho-personalizado .area3 {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  #grama-sintetica,
+  #capacho-personalizado {
+    padding: 40px 0;
+  }
+  #grama-sintetica .area1,
+  #grama-sintetica .area2,
+  #capacho-personalizado .area1,
+  #capacho-personalizado .area2 {
+    text-align: center;
+    align-items: center;
+  }
+  #grama-sintetica .area2 .btn-catalogo,
+  #grama-sintetica .area2 .btn-orcamento,
+  #capacho-personalizado .area2 .btn-catalogo,
+  #capacho-personalizado .area2 .btn-orcamento {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 580px) {
+  #grama-sintetica .area3 .carrossel-gramas .prev,
+  #grama-sintetica .area3 .carrossel-gramas .next,
+  #capacho-personalizado .area3 .carrossel-gramas .prev,
+  #capacho-personalizado .area3 .carrossel-gramas .next {
+    width: 34px;
+    height: 34px;
+  }
+  #grama-sintetica .area1 .kicker,
+  #capacho-personalizado .area1 .kicker {
+    font-size: 1.2rem;
+  }
+}
+
+#capacho {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 560px;
+  color: #fff;
+  /* Substitua o arquivo abaixo pela foto real do ambiente (varanda).
+       Enquanto não houver imagem, o gradiente serve de fallback. */
+  background:
+    linear-gradient(rgba(20, 16, 14, 0), rgba(20, 16, 14, 0)),
+    url(imagens/main/home/capacho/capacho-banner.webp) center/cover no-repeat;
+}
+
+#capacho h2 {
+  font-size: 50px;
+}
+
+#atuacao-capachos {
+  text-align: center;
+  padding: 40px 10px;
+  color: var(--main);
+}
+
+#atuacao-capachos h2:first-child {
+  text-align: center;
+  font-size: 50px;
+  margin: 0 0 40px 0;
+  color: #494949;
+}
+
+#atuacao-capachos .card img {
+  width: 360px;
+}
+
+#title {
+  text-align: center;
+  padding: 20px 40px;
+}
+
+#title h2 {
+  font-size: 50px;
+  color: var(--grey);
+  font-weight: 400;
+}
+
+#fuget-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 560px;
+  color: #fff;
+  /* Substitua o arquivo abaixo pela foto real do ambiente (varanda).
+       Enquanto não houver imagem, o gradiente serve de fallback. */
+  background:
+    linear-gradient(rgba(20, 16, 14, 0), rgba(20, 16, 14, 0)),
+    url(imagens/main/home/fulget/fulget-banner.webp) center/cover no-repeat;
+}
+
+#fuget-banner h2 {
+  font-size: 50px;
+}
+
+#atuacao-fulget {
+  text-align: center;
+  padding: 40px 10px;
+  color: var(--main);
+}
+
+#atuacao-fulget h2:first-child {
+  text-align: center;
+  font-size: 50px;
+  margin: 0 0 40px 0;
+  color: #494949;
+}
+
+#atuacao-fulget .card img {
+  width: 360px;
+}
