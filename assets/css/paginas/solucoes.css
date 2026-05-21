@@ -6,6 +6,20 @@
            └── .produto-info       (col direita — texto e specs)
    ────────────────────────────────────────────────────────────── */
 
+/* Acessibilidade: oculta o título visualmente mas mantém para leitores
+   de tela e para o validator W3C reconhecer o heading da section. */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 #solucoes-banner {
   display: flex;
   align-items: center;

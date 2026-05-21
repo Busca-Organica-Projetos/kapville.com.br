@@ -16,26 +16,27 @@ $borg->cssCompress(array(
 <body>
     <?php include "includes/_header.php"; ?>
     <main class="main-content">
-        <section id="solucoes-banner">
+        <section id="solucoes-banner" aria-labelledby="solucoes-titulo">
             <div class="container">
                 <div class="flex">
                     <div class="col-lg-12 col-md-12">
-
+                        <h1 id="solucoes-titulo" class="sr-only"><?= $h1 ?></h1>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="linha">
+        <div id="linha">
             <div class="container">
                 <div class="flex">
                     <div class="col-lg-12 col-md-12">
-                        <img class="img-responsive" src="<?php $url ?>imagens/main/solucoes/linha.webp" alt="">
+                        <img class="img-responsive" src="<?php echo $url; ?>imagens/main/solucoes/linha.webp" alt="">
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="produtos">
+        </div>
+        <section id="produtos" aria-labelledby="produtos-titulo">
             <div class="container">
+                <h2 id="produtos-titulo" class="sr-only">Nossos Desumidificadores</h2>
                 <div class="flex">
                     <?php foreach ($produtos as $nome => $dados): ?>
                         <?= $dados['content'] ?>
