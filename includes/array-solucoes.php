@@ -9,7 +9,7 @@ $produtos = [
                 <!-- ─── Produto 1: Desidrat Compact Íon ───────────────── -->
                 <article class="produto-item">
                     <div class="produto-info">
-                        <img src="' . $url . 'imagens/main/solucoes/produtos/prod1.webp">
+                        <img src="' . $url . 'imagens/main/solucoes/produtos/prod1.webp" alt="banner Desumidificador de ar Desidrat Compact Íon – Ionizador – Branco – Bivolt – Thermomatic">
 
                         <h2 class="produto-titulo">Desumidificador de ar Desidrat Compact Íon – Ionizador – Branco – Bivolt – Thermomatic</h2>
 
@@ -87,7 +87,7 @@ $produtos = [
     "Desumidificador de ar Desidrat Cristal – Bivolt – Recarregável – Sílica renovável – Thermomatic" => [
         "content" => '
             <div class="col-lg-12 col-md-12">
-                <img src="' . $url . 'imagens/main/solucoes/produtos/prod2.webp">
+                <img src="' . $url . 'imagens/main/solucoes/produtos/prod2.webp" alt="banner Desumidificador de ar Desidrat Cristal – Bivolt – Recarregável – Sílica renovável – Thermomatic">
 
                 <!-- ─── Produto 2: Desidrat Cristal ───────────────────── -->
                 <article class="produto-item">
@@ -157,7 +157,7 @@ $produtos = [
     "Desumidificador de ar Desidrat Mini – Bivolt – Branco – Thermomatic" => [
         "content" => '
             <div class="col-lg-12 col-md-12">
-                <img src="' . $url . 'imagens/main/solucoes/produtos/prod3.webp">
+                <img src="' . $url . 'imagens/main/solucoes/produtos/prod3.webp" alt="banner Desumidificador de ar Desidrat Mini – Bivolt – Branco – Thermomatic">
 
                 <!-- ─── Produto 3: Desidrat Mini ──────────────────────── -->
                 <article class="produto-item">
@@ -231,7 +231,7 @@ $produtos = [
     "Desumidificador de ar Desidrat New Plus 150 – 127V – Timer – Umidostato digital – Thermomatic" => [
         "content" => '
             <div class="col-lg-12 col-md-12">
-                <img src="' . $url . 'imagens/main/solucoes/produtos/prod4.webp">
+                <img src="' . $url . 'imagens/main/solucoes/produtos/prod4.webp" alt="banner Desumidificador de ar Desidrat New Plus 150 – 127V – Timer – Umidostato digital – Thermomatic">
 
                 <!-- ─── Produto 4: Desidrat New Plus 150 ──────────────── -->
                 <article class="produto-item">
@@ -333,7 +333,7 @@ $produtos = [
     "Desumidificador de ar Desidrat Plus 70 – 220V – Timer – Umidostato – Branco – Thermomatic" => [
         "content" => '
             <div class="col-lg-12 col-md-12">
-                <img src="' . $url . 'imagens/main/solucoes/produtos/prod5.webp">
+                <img src="' . $url . 'imagens/main/solucoes/produtos/prod5.webp" alt="banner Desumidificador de ar Desidrat Plus 70 – 220V – Timer – Umidostato – Branco – Thermomatic">
 
                 <!-- ─── Produto 5: Desidrat Plus 70 ───────────────────── -->
                 <article class="produto-item">
@@ -422,7 +422,7 @@ $produtos = [
     "Desumidificador de ar Desidrat Plus 300 – 220V – Painel Led – Timer – Umidostato – Thermomatic" => [
         "content" => '
             <div class="col-lg-12 col-md-12">
-                <img src="' . $url . 'imagens/main/solucoes/produtos/prod6.webp">
+                <img src="' . $url . 'imagens/main/solucoes/produtos/prod6.webp" alt="banner Desumidificador de ar Desidrat Plus 300 – 220V – Painel Led – Timer – Umidostato – Thermomatic">
 
                 <!-- ─── Produto 6: Desidrat Plus 300 ──────────────────── -->
                 <article class="produto-item">
@@ -512,7 +512,7 @@ $produtos = [
     "Desumidificador de ar Desidrat Max 500 – 220V – Timer – Umidostato – Thermomatic" => [
         "content" => '
             <div class="col-lg-12 col-md-12">
-                <img src="' . $url . 'imagens/main/solucoes/produtos/prod7.webp">
+                <img src="' . $url . 'imagens/main/solucoes/produtos/prod7.webp" alt="banner Desumidificador de ar Desidrat Max 500 – 220V – Timer – Umidostato – Thermomatic">
 
                 <!-- ─── Produto 7: Desidrat Max 500 ───────────────────── -->
                 <article class="produto-item">
@@ -597,7 +597,7 @@ $produtos = [
     "Desumidificador de ar Desidrat Plus 1000 – 220v – Painel digital – Timer – Umidostato – Thermomatic" => [
         "content" => '
             <div class="col-lg-12 col-md-12">
-                <img src="' . $url . 'imagens/main/solucoes/produtos/prod8.webp">
+                <img src="' . $url . 'imagens/main/solucoes/produtos/prod8.webp" alt="banner Desumidificador de ar Desidrat Plus 1000 – 220v – Painel digital – Timer – Umidostato – Thermomatic">
 
                 <!-- ─── Produto 8: Desidrat Plus 1000 ─────────────────── -->
                 <article class="produto-item">
@@ -693,7 +693,7 @@ $produtos = [
     "Desumidificador de ar Desidrat New Plus 1500 – 220v – Painel digital – Timer – Umidostato – Thermomatic" => [
         "content" => '
             <div class="col-lg-12 col-md-12">
-                <img src="' . $url . 'imagens/main/solucoes/produtos/prod9.webp">
+                <img src="' . $url . 'imagens/main/solucoes/produtos/prod9.webp" alt="banner Desumidificador de ar Desidrat New Plus 1500 – 220v – Painel digital – Timer – Umidostato – Thermomatic">
 
                 <!-- ─── Produto 9: Desidrat New Plus 1500 ─────────────── -->
                 <article class="produto-item">
@@ -769,21 +769,4 @@ $produtos = [
                             <li><strong>Vazão de ar/hora:</strong> 240 m³/h</li>
                             <li><strong>Filtro:</strong> PVC</li>
                             <li><strong>Rodízio:</strong> Omnidirecional (360°)</li>
-                            <li><strong>Portátil:</strong> Sim</li>
-                            <li><strong>Garantia:</strong> 1 Ano</li>
-                            <li><strong>Acessórios:</strong> Manual de instrução</li>
-                            <li><strong>Mais informações:</strong> Limpeza de filtro 1x na semana</li>
-                            <li><strong>Recomendações:</strong> Colocar o equipamento com pelo menos 30 cm de distância da parede</li>
-                        </ul>
-
-                        <a href="' . $linkWpp . urlencode('Olá, vim pelo site e gostaria de solicitar um orçamento para Desumidificador de ar Desidrat New Plus 1500 – 220v – Painel digital – Timer – Umidostato – Thermomatic') . '" target="_blank" rel="noopener" class="btn-fale-conosco" data-click-track="WhatsApp - Soluções">Fale Conosco</a>
-
-                    </div>
-                </article>
-
-            </div>
-        '
-    ],
-
-];
-?>
+       
