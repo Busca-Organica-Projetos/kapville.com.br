@@ -8,7 +8,7 @@
             ?>
                 <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
                     <a href="<?php echo $url;?><?php echo $path.$arquivo;?>" title="Galeria Imagens" data-fancybox-group="empresa">
-                        <img src="<?php echo $url;?><?php echo $path.$arquivo;?>" alt="Galeria Imagens" title="Galeria Imagens" class="img-responsive">
+                        <img src="<?php echo $url; ?><?php echo $path.$arquivo;?>" alt="Galeria Imagens" title="Galeria Imagens" class="img-responsive" loading="lazy">
                     </a>
                 </div>
             <?php

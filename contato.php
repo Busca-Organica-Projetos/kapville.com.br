@@ -58,7 +58,7 @@ $borg->cssCompress(array(
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                            <img class="img-responsive" src="<?php $url ?>imagens/main/contato/contato.webp" alt="">
+                            <img class="img-responsive" src="<?php echo $url; ?>imagens/main/contato/contato.webp" alt="Banner de contato Kapville" loading="lazy">
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                             <form class="form-contato">

@@ -21,7 +21,7 @@
                 <!-- carregado pelo js - mudar data-video -->
             </div>
             <div class="img-iframe">
-                <img src="<?=$url;?>imagens/main/contato/banner-quem.jpg" alt="<?=$title;?>" class="img-responsive">
+                <img src="<?=$url; ?>imagens/main/contato/banner-quem.jpg" alt="<?=$title;?>" class="img-responsive" loading="lazy">
                 <button class="show"><i class="fa-regular fa-circle-play" style="color: rgb(35, 23, 169);"></i></button>
             </div>
         </div>

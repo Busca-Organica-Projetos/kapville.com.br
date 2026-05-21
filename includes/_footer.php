@@ -14,7 +14,7 @@
     <div class="container">
         <div class="flex not-a">
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 align-self logo-footer">
-                <a href="<?php echo $url; ?>" title="<?php echo $nome_empresa; ?>"><img src="<?php echo $url.$logo_cliente; ?>" alt="<?php echo $nome_empresa; ?>" title="<?php echo $nome_empresa; ?>" class="img-responsive"></a>
+                <a href="<?php echo $url; ?>" title="<?php echo $nome_empresa; ?>"><img src="<?php echo $url.$logo_cliente; ?>" alt="<?php echo $nome_empresa; ?>" title="<?php echo $nome_empresa; ?>" class="img-responsive" loading="lazy"></a>
             </div>
             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
                 <h4>Institucional</h4>
@@ -58,20 +58,20 @@
                             </a>
                             <a class="selos-validacao" rel="nofollow" href="http://validator.w3.org/check?uri=<?php echo $canonical; ?>" target="_blank"
                                 title="HTML 5 - Site Desenvolvido nos padrões W3C">
-                                <img src="https://www.buscaorganica.com.br/ast/img/selo-html-5.jpg" alt="HTML 5">
+                                <img src="https://www.buscaorganica.com.br/ast/img/selo-html-5.jpg" alt="HTML 5" loading="lazy">
                             </a>
                             <a class="selos-validacao" rel="nofollow" href="http://jigsaw.w3.org/css-validator/validator?uri=<?php echo $canonical; ?>"
                                 target="_blank" title="CSS 3 - Site Desenvolvido nos padrões W3C">
-                                <img src="https://www.buscaorganica.com.br/ast/img/selo-css-3.jpg" alt="CSS 3">
+                                <img src="https://www.buscaorganica.com.br/ast/img/selo-css-3.jpg" alt="CSS 3" loading="lazy">
                             </a>
                             <a class="selos-validacao" rel="nofollow" href="https://search.google.com/test/mobile-friendly?hl=PT&amp;url=<?php echo $canonical; ?>"
                                 target="_blank" title="Compatível com dispositivos móveis">
-                                <img src="https://www.buscaorganica.com.br/ast/img/selo-dispositivo-movel.jpg" alt="Dispositivos Móveis">
+                                <img src="https://www.buscaorganica.com.br/ast/img/selo-dispositivo-movel.jpg" alt="Dispositivos Móveis" loading="lazy">
                             </a>
                         </div>
                         <a rel="noopener" href="https://www.buscaorganica.com.br"
                             target="_blank" title="Busca Orgânica - Crescimento para sua empresa através do Google">
-                            <img src="https://www.buscaorganica.com.br/ast/img/selo-busca-organica.png" alt="Busca Orgânica">
+                            <img src="https://www.buscaorganica.com.br/ast/img/selo-busca-organica.png" alt="Busca Orgânica" loading="lazy">
                         </a>
                     </div>
                 </div>

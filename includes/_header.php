@@ -7,7 +7,7 @@
                     <span>
                         <picture>
                             <source type="image/png" srcset="<?php echo $url; ?><?php echo $logo_cliente; ?>">
-                            <img src="<?php echo $url . $logo_cliente; ?>" alt="<?php echo $nome_empresa; ?>" title="<?php echo $nome_empresa; ?>" class="img-responsive">
+                            <img src="<?php echo $url . $logo_cliente; ?>" alt="<?php echo $nome_empresa; ?>" title="<?php echo $nome_empresa; ?>" class="img-responsive" loading="lazy">
                         </picture>
                     </span>
                 </a>

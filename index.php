@@ -33,7 +33,7 @@ $borg->cssCompress(array(
                                     Capachos personalizados, grama sintética, piso Fulget e
                                     revestimentos com qualidade e sofisticação para seu projeto.
                                 </p>
-                                <a class="banner-cta" href="https://api.whatsapp.com/send?phone=5547999897009" target="_blank" rel="noopener" data-click-track="WhatsApp - Banner Home">
+                                <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de falar com um especialista.') ?>" target="_blank" rel="noopener" data-click-track="WhatsApp - Banner Home">
                                     Fale com o Especialista
                                 </a>
                             </div>
@@ -158,7 +158,7 @@ $borg->cssCompress(array(
                                 <div class="card">
                                     <div class="header">
                                         <div class="col-lg-2">
-                                            <img class="perfil" src="<?php echo $url; ?>imagens/main/home/avaliacoes/<?= $av["img"] ?>.webp" alt="<?= htmlspecialchars($av['nome']) ?>">
+                                            <img class="perfil" src="<?php echo $url; ?>imagens/main/home/avaliacoes/<?= $av["img"] ?>.webp" alt="<?= htmlspecialchars($av['nome']) ?>" loading="lazy">
                                         </div>
                                         <div class="col-lg-2">
                                             <div class="box-name">
@@ -168,7 +168,7 @@ $borg->cssCompress(array(
                                         </div>
                                         <div class="col-lg-8">
                                             <div class="icon-google">
-                                                <img src="<?php $url ?>imagens/main/home/avaliacoes/logo-google.webp" alt="">
+                                                <img src="<?php $url ?>imagens/main/home/avaliacoes/logo-google.webp" alt="" loading="lazy">
                                             </div>
                                         </div>
                                     </div>
@@ -264,10 +264,10 @@ $borg->cssCompress(array(
                                 A <strong style="color: white;">grama sintética na decoração</strong> apresenta inúmeros benefícios. Além da economia de tempo, você acaba economizando com a manutenção. A grama sintética é durável e não necessita de uma demasiada quantidade de tempo para a manutenção.
                             </p>
                             <p class="local">GRAMA SINTÉTICA JOINVILLE</p>
-                            <a class="btn-catalogo" href="https://wa.me/c/554799897009" target="_blank" rel="noopener" data-click-track="Catálogo - Grama Sintética">
+                            <a class="btn-catalogo" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de visualizar o catálogo de para grama sintética') ?>" target="_blank" rel="noopener" data-click-track="Catálogo - Grama Sintética">
                                 Visualizar Catálogo
                             </a>
-                            <a class="btn-orcamento" href="https://api.whatsapp.com/send?phone=5547999897009" target="_blank" rel="noopener" data-click-track="Orçamento - Grama Sintética">
+                            <a class="btn-orcamento" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de solicitar um orçamento de grama sintética') ?>" target="_blank" rel="noopener" data-click-track="Orçamento - Grama Sintética">
                                 Orçamento
                             </a>
                         </div>
@@ -311,7 +311,7 @@ $borg->cssCompress(array(
                     <div class="col-lg-12 col-md-12">
                         <div class="box-text">
                             <h2>Um capacho personalizado é para expressar a sua personalidade e estilo, ou para promover a sua marca.</h2>
-                            <a class="banner-cta" href="https://api.whatsapp.com/send?phone=5547999897009" target="_blank" rel="noopener" data-click-track="WhatsApp - capacho banner">
+                            <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de saber mais sobre capachos personalizados.') ?>" target="_blank" rel="noopener" data-click-track="WhatsApp - capacho banner">
                                 Tenho Interesse
                             </a>
                         </div>
@@ -387,10 +387,10 @@ $borg->cssCompress(array(
                                 Causar uma boa impressão logo na entrada de seu negócio, fortalecer a sua marca, auxiliar no controle da sujidade no ambiente diminuindo o custo com a limpeza interna a aquisição do capacho é primordial no seu negócio.
                             </p>
                             <p class="local">LOJA DE TAPETES JOINVILLE</p>
-                            <a class="btn-catalogo" href="https://wa.me/c/554799897009" target="_blank" rel="noopener" data-click-track="Catálogo - Capacho Personalizado">
+                            <a class="btn-catalogo" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de visualizar o catálogo de capachos personalizados') ?>" target="_blank" rel="noopener" data-click-track="Catálogo - Capacho Personalizado">
                                 Visualizar Catálogo
                             </a>
-                            <a class="btn-orcamento" href="https://api.whatsapp.com/send?phone=5547999897009" target="_blank" rel="noopener" data-click-track="Orçamento - Capacho Personalizado">
+                            <a class="btn-orcamento" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de solicitar um orçamento de capacho personalizado') ?>" target="_blank" rel="noopener" data-click-track="Orçamento - Capacho Personalizado">
                                 Orçamento
                             </a>
                         </div>
@@ -444,7 +444,7 @@ $borg->cssCompress(array(
                     <div class="col-lg-12 col-md-12">
                         <div class="box-text">
                             <h2>Piso drenante Fulget é uma excelente opção para quem busca durabilidade, segurança e estética natural para áreas externas.</h2>
-                            <a class="banner-cta" href="https://api.whatsapp.com/send?phone=5547999897009" target="_blank" rel="noopener" data-click-track="WhatsApp - capacho banner">
+                            <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e tenho interesse em pisos fuget.') ?>" target="_blank" rel="noopener" data-click-track="WhatsApp - capacho banner">
                                 Tenho Interesse
                             </a>
                         </div>
@@ -517,10 +517,8 @@ $borg->cssCompress(array(
                                 O objetivo é oferecer ao mercado alta qualidade estética e técnica aumentando o ciclo de vida dos produtos naturais. Oferecendo revestimentos Com diversificada gama de minerais naturais, nuances de cor e forma, asseguramos inovação e elevados padrões de qualidade.
                              </p>
                             <p class="local">PISO DRENANTE FUGET JOINVILLE</p>
-                            <a class="btn-catalogo" href="https://wa.me/c/554799897009" target="_blank" rel="noopener" data-click-track="Catálogo - Capacho Personalizado">
-                                Visualizar Catálogo
-                            </a>
-                            <a class="btn-orcamento" href="https://api.whatsapp.com/send?phone=5547999897009" target="_blank" rel="noopener" data-click-track="Orçamento - Capacho Personalizado">
+                            <a class="btn-catalogo" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de visualizar o catálogo de pisos fuget'); ?>" target="_blank" rel="noopener" data-click-track="Catálogo - Capacho Personalizado">Visualizar Catálogo</a>
+                            <a class="btn-orcamento" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de solicitar um orçamento de pisos fuget') ?>" target="_blank" rel="noopener" data-click-track="Orçamento - Capacho Personalizado">
                                 Orçamento
                             </a>
                         </div>

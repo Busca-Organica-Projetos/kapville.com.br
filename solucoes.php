@@ -29,7 +29,7 @@ $borg->cssCompress(array(
             <div class="container">
                 <div class="flex">
                     <div class="col-lg-12 col-md-12">
-                        <img class="img-responsive" src="<?php echo $url; ?>imagens/main/solucoes/linha.webp" alt="">
+                        <img class="img-responsive" src="<?php echo $url; ?>imagens/main/solucoes/linha.webp" alt="Linha decorativa separadora" loading="lazy">
                     </div>
                 </div>
             </div>

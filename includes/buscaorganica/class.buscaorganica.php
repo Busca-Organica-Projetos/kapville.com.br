@@ -179,10 +179,10 @@ class classBuscaOrganica {
                     if ($webp) {
                         $html .= '          <picture class="td">';
                         $html .= '              <source type="image/webp" srcset="' . $src_img_webp . '">';
-                        $html .= '              <img src="' . $src_img . '" alt="' . $pagina['title'] . '" title="' . $pagina['title'] . '">';
+                        $html .= '              <img src="' . $src_img . '" alt="' . $pagina['title'] . '" title="' . $pagina['title'] . '" />';
                         $html .= '          </picture>';
                     } else {
-                        $html .= '              <img src="' . $src_img . '" alt="' . $pagina['title'] . '" title="' . $pagina['title'] . '">';
+                        $html .= '              <img src="' . $src_img . '" alt="' . $pagina['title'] . '" title="' . $pagina['title'] . '" />';
                     }
                     $html .=            '<div class="td title-submenu-blog">' . $pagina['title'] . ' <span class="description-submenu-blog">' . $pagina['title'] . '</span></div>';
                     $html .= '      </div>';
@@ -274,11 +274,11 @@ class classBuscaOrganica {
                         $html .= "</div>\n";
                         
                         if ($projetoRegional) {
-                            $html .=     "<img src=\"" . $src_img . "\" alt=\"" . $palavra . "\" title=\"" . $palavra . "\" " . $class_img . ">\n";
+                            $html .=     "<img src=\"" . $src_img . "\" alt=\"" . $palavra . "\" title=\"" . $palavra . "\" " . $class_img . " />\n";
                         } else {
                             $html .= "<picture>";
                             $html .=     "<source type=\"image/webp\" srcset=\"".$src_img_webp."\">";
-                            $html .=     "<img src=\"" . $src_img . "\" alt=\"" . $palavra . "\" title=\"" . $palavra . "\" " . $class_img . ">\n";
+                            $html .=     "<img src=\"" . $src_img . "\" alt=\"" . $palavra . "\" title=\"" . $palavra . "\" " . $class_img . " />\n";
                             $html .= "</picture>";
                         }
                         
@@ -298,11 +298,11 @@ class classBuscaOrganica {
                         $html .= "</div>\n";
                         
                         if ($projetoRegional) {
-                            $html .=     "<img src=\"" . $src_img . "\" alt=\"" . $palavra . "\" title=\"" . $palavra . "\" " . $class_img . ">\n";
+                            $html .=     "<img src=\"" . $src_img . "\" alt=\"" . $palavra . "\" title=\"" . $palavra . "\" " . $class_img . " />\n";
                         } else {
                             $html .= "<picture>";
                             $html .=     "<source type=\"image/webp\" srcset=\"".$src_img_webp."\">";
-                            $html .=     "<img src=\"" . $src_img . "\" alt=\"" . $palavra . "\" title=\"" . $palavra . "\" " . $class_img . ">\n";
+                            $html .=     "<img src=\"" . $src_img . "\" alt=\"" . $palavra . "\" title=\"" . $palavra . "\" " . $class_img . " />\n";
                             $html .= "</picture>";
                         }
                         
@@ -323,11 +323,11 @@ class classBuscaOrganica {
                         $html .= "<a rel=\"nofollow\" href=\"" . $url_page . "\" title=\"" . $palavra . "\">\n";
                         
                         if ($projetoRegional) {
-                            $html .=     "<img src=\"" . $src_img . "\" alt=\"" . $palavra . "\" title=\"" . $palavra . "\" " . $class_img . ">\n";
+                            $html .=     "<img src=\"" . $src_img . "\" alt=\"" . $palavra . "\" title=\"" . $palavra . "\" " . $class_img . " />\n";
                         } else {
                             $html .= "<picture>";
                             $html .=     "<source type=\"image/webp\" srcset=\"".$src_img_webp."\">";
-                            $html .=     "<img src=\"" . $src_img . "\" alt=\"" . $palavra . "\" title=\"" . $palavra . "\" " . $class_img . ">\n";
+                            $html .=     "<img src=\"" . $src_img . "\" alt=\"" . $palavra . "\" title=\"" . $palavra . "\" " . $class_img . " />\n";
                             $html .= "</picture>";
                         }
                         $html .= "</a>\n";
@@ -439,7 +439,7 @@ class classBuscaOrganica {
             if (empty($quantidade)) {
                 throw new Exception("Quantidade não definida", 2);
             }
-            $html .= "<div class=\"lista-galeria-fancy flex\">";
+            $html .= "<div class=\"lista-galeria-fancy row\">";
             $url_palavra = $this->formatStringToURL($palavra);
             $src_default = $this->url."imagens/".$url_palavra."/";
             for ($i = 1; $i <= $quantidade; $i++) {
@@ -458,10 +458,10 @@ class classBuscaOrganica {
     
                     $html .= "<picture>";
                     $html .=     "<source type=\"image/webp\" srcset=\"".$img_small_webp."\">";
-                    $html .=     "<img src=\"".$img_small."\" alt=\"".$palavra." - ".$i."\" title=\"".$palavra." - ".$i."\" class=\"img-responsive\">";
+                    $html .=     "<img src=\"".$img_small."\" alt=\"".$palavra." - ".$i."\" title=\"".$palavra." - ".$i."\" class=\"img-responsive\" />";
                     $html .= "</picture>";
                 } else {
-                    $html .= "<img src=\"".$img_small."\" alt=\"".$palavra." - ".$i."\" title=\"".$palavra." - ".$i."\" class=\"img-responsive\">";
+                    $html .= "<img src=\"".$img_small."\" alt=\"".$palavra." - ".$i."\" title=\"".$palavra." - ".$i."\" class=\"img-responsive\" />";
                 }
                
                 $html .= "</a>";
@@ -650,7 +650,7 @@ class classBuscaOrganica {
                 $html = '
                 <div class="pesquisa-box '.$tema.'">
                     <form method="post" class="search" action="pesquisa">
-                        <input type="search" name="pesquisa" placeholder="Pesquisar">
+                        <input type="search" name="pesquisa" placeholder="Pesquisar" />
                         <button name="ir" title="Pesquisar"><i class="fa fa-search"></i></button>
                     </form>
                 </div>
@@ -660,7 +660,7 @@ class classBuscaOrganica {
                 $html = '
                 <div class="pesquisa-box pesquisa-box-2 '.$tema.'">
                     <form method="post" class="search" action="pesquisa">
-                        <input type="search" name="pesquisa" placeholder="Pesquisar">
+                        <input type="search" name="pesquisa" placeholder="Pesquisar" />
                         <button name="ir" title="Pesquisar"><span class="inline-block">Pesquisar</span> <i class="fa fa-search"></i></button>
                     </form>
                 </div>
@@ -719,10 +719,10 @@ class classBuscaOrganica {
                 if ($webp) {
                     $html .= "<picture>";
                     $html .=     "<source type=\"image/webp\" srcset=\"".$src_img_webp."\">";
-                    $html .=     "<img src=\"" . $src_img . "\" alt=\"" . $value['title'] . "\" title=\"" . $value['title'] . "\">\n";
+                    $html .=     "<img src=\"" . $src_img . "\" alt=\"" . $value['title'] . "\" title=\"" . $value['title'] . "\" />\n";
                     $html .= "</picture>";
                 } else {
-                    $html .=     "<img src=\"" . $src_img . "\" alt=\"" . $value['title'] . "\" title=\"" . $value['title'] . "\">\n";
+                    $html .=     "<img src=\"" . $src_img . "\" alt=\"" . $value['title'] . "\" title=\"" . $value['title'] . "\" />\n";
                 }
                 
                 $html .= "</a>\n";
@@ -744,10 +744,10 @@ class classBuscaOrganica {
             if ($webp) {
                 $html .= '          <picture>';
                 $html .= '              <source type="image/webp" srcset="'.$src_img_webp.'">';
-                $html .= '              <img src="' . $src_img . '" alt="' . $paginasBlog['title'] . '" title="' . $paginasBlog['title'] . '">';
+                $html .= '              <img src="' . $src_img . '" alt="' . $paginasBlog['title'] . '" title="' . $paginasBlog['title'] . '" />';
                 $html .= '          </picture>';
             } else {
-                $html .= '              <img src="' . $src_img . '" alt="' . $paginasBlog['title'] . '" title="' . $paginasBlog['title'] . '">';
+                $html .= '              <img src="' . $src_img . '" alt="' . $paginasBlog['title'] . '" title="' . $paginasBlog['title'] . '" />';
             }
             $html .= '      </a>';
             $html .= '  </div>';
@@ -784,10 +784,10 @@ class classBuscaOrganica {
                 if ($webp) {
                     $html .= "<picture>";
                     $html .=     "<source type=\"image/webp\" srcset=\"".$src_img_webp."\">";
-                    $html .=     "<img src=\"" . $src_img . "\" alt=\"" . $value['title'] . "\" title=\"" . $value['title'] . "\">\n";
+                    $html .=     "<img src=\"" . $src_img . "\" alt=\"" . $value['title'] . "\" title=\"" . $value['title'] . "\" />\n";
                     $html .= "</picture>";
                 } else {
-                    $html .=     "<img src=\"" . $src_img . "\" alt=\"" . $value['title'] . "\" title=\"" . $value['title'] . "\">\n";
+                    $html .=     "<img src=\"" . $src_img . "\" alt=\"" . $value['title'] . "\" title=\"" . $value['title'] . "\" />\n";
                 }
                 
                 $html .= "</a>\n";
@@ -809,10 +809,10 @@ class classBuscaOrganica {
             if ($webp) {
                 $html .= '          <picture>';
                 $html .= '              <source type="image/webp" srcset="'.$src_img_webp.'">';
-                $html .= '              <img src="' . $src_img . '" alt="' . $paginasPerson['title'] . '" title="' . $paginasPerson['title'] . '">';
+                $html .= '              <img src="' . $src_img . '" alt="' . $paginasPerson['title'] . '" title="' . $paginasPerson['title'] . '" />';
                 $html .= '          </picture>';
             } else {
-                $html .= '      <img src="' . $src_img . '" alt="' . $paginasPerson['title'] . '" title="' . $paginasPerson['title'] . '">';
+                $html .= '      <img src="' . $src_img . '" alt="' . $paginasPerson['title'] . '" title="' . $paginasPerson['title'] . '" />';
             }
             $html .= '      </a>';
             $html .= '  </div>';
@@ -863,10 +863,10 @@ class classBuscaOrganica {
                     if ($webp) {
                         $html .= '          <picture class="td">';
                         $html .= '              <source type="image/webp" srcset="' . $src_img_webp . '">';
-                        $html .= '              <img src="' . $src_img . '" alt="' . $pagina['title'] . '" title="' . $pagina['title'] . '">';
+                        $html .= '              <img src="' . $src_img . '" alt="' . $pagina['title'] . '" title="' . $pagina['title'] . '" />';
                         $html .= '          </picture>';
                     } else {
-                        $html .= '              <img src="' . $src_img . '" alt="' . $pagina['title'] . '" title="' . $pagina['title'] . '">';
+                        $html .= '              <img src="' . $src_img . '" alt="' . $pagina['title'] . '" title="' . $pagina['title'] . '" />';
                     }
                     $html .=            '<div class="td title-submenu-blog">' . $pagina['title'] . ' <span class="description-submenu-blog">' . $pagina['title'] . '</span></div>';
                     $html .= '      </div>';

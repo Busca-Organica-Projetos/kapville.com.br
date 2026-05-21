@@ -465,6 +465,7 @@
   text-align: center;
   font-size: 50px;
   margin: 0 0 40px 0;
+  color: #494949;
 }
 
 #atuacao .card img {
@@ -472,7 +473,7 @@
 }
 
 /* ──────────────────────────────────────────────────────────────
-   GRAMA SINTÉTICA + CAPACHO PERSONALIZADO + PISO FULGET
+   GRAMA SINTÉTICA + CAPACHO PERSONALIZADO
    (mesma estrutura visual: kicker + título + descrição + carrossel)
    ────────────────────────────────────────────────────────────── */
 
@@ -555,6 +556,13 @@
   margin: 0 0 14px;
 }
 
+#grama-sintetica .area2 p strong,
+#capacho-personalizado .area2 p strong,
+#piso-fulget .area2 p strong {
+  font-weight: 700;
+  color: #fff;
+}
+
 #grama-sintetica .area2 .local,
 #capacho-personalizado .area2 .local,
 #piso-fulget .area2 .local {
@@ -567,10 +575,11 @@
 
 #grama-sintetica .area2 .btn-catalogo,
 #grama-sintetica .area2 .btn-orcamento,
+#piso-fulget .area2 .btn-orcamento,
 #capacho-personalizado .area2 .btn-catalogo,
 #capacho-personalizado .area2 .btn-orcamento,
-#piso-fulget .area2 .btn-catalogo,
-#piso-fulget .area2 .btn-orcamento {
+#piso-fulget .area2 .btn-orcamento,
+#piso-fulget .area2 .btn-catalogo {
   display: inline-block;
   padding: 12px 28px;
   border-radius: 4px;
@@ -674,12 +683,12 @@
   display: block;
 }
 
-/* Botões prev / next do carrossel */
+/* Botões prev / next */
 #grama-sintetica .area3 .carrossel-gramas .prev,
 #grama-sintetica .area3 .carrossel-gramas .next,
+#piso-fulget .area3 .carrossel-gramas .next,
 #capacho-personalizado .area3 .carrossel-gramas .prev,
 #capacho-personalizado .area3 .carrossel-gramas .next,
-#piso-fulget .area3 .carrossel-gramas .prev,
 #piso-fulget .area3 .carrossel-gramas .next {
   position: absolute;
   top: 50%;
@@ -702,41 +711,47 @@
 
 #grama-sintetica .area3 .carrossel-gramas .prev,
 #capacho-personalizado .area3 .carrossel-gramas .prev,
-#piso-fulget .area3 .carrossel-gramas .prev { left: 10px; }
+#piso-fulget .area3 .carrossel-gramas .prev {
+  left: 10px;
+}
 
 #grama-sintetica .area3 .carrossel-gramas .next,
 #capacho-personalizado .area3 .carrossel-gramas .next,
-#piso-fulget .area3 .carrossel-gramas .next { right: 10px; }
+#piso-fulget .area3 .carrossel-gramas .next {
+  right: 10px;
+}
 
 #grama-sintetica .area3 .carrossel-gramas .prev:hover,
 #grama-sintetica .area3 .carrossel-gramas .next:hover,
+#piso-fulget .area3 .carrossel-gramas .next:hover,
 #capacho-personalizado .area3 .carrossel-gramas .prev:hover,
 #capacho-personalizado .area3 .carrossel-gramas .next:hover,
-#piso-fulget .area3 .carrossel-gramas .prev:hover,
 #piso-fulget .area3 .carrossel-gramas .next:hover {
   background: var(--secondary-strong, #d49619);
 }
 
 #grama-sintetica .area3 .carrossel-gramas .prev:active,
 #grama-sintetica .area3 .carrossel-gramas .next:active,
+#piso-fulget .area3 .carrossel-gramas .next:active,
 #capacho-personalizado .area3 .carrossel-gramas .prev:active,
 #capacho-personalizado .area3 .carrossel-gramas .next:active,
-#piso-fulget .area3 .carrossel-gramas .prev:active,
 #piso-fulget .area3 .carrossel-gramas .next:active {
   transform: translateY(-50%) scale(0.92);
 }
 
 #grama-sintetica .area3 .carrossel-gramas .prev svg,
 #grama-sintetica .area3 .carrossel-gramas .next svg,
+#piso-fulget .area3 .carrossel-gramas .next svg,
 #capacho-personalizado .area3 .carrossel-gramas .prev svg,
 #capacho-personalizado .area3 .carrossel-gramas .next svg,
-#piso-fulget .area3 .carrossel-gramas .prev svg,
 #piso-fulget .area3 .carrossel-gramas .next svg {
   display: block;
   pointer-events: none;
 }
 
-/* Responsivo */
+/* ──────────────────────────────────────────────────────────────
+   RESPONSIVO — GRAMA + CAPACHO
+   ────────────────────────────────────────────────────────────── */
 @media (max-width: 991px) {
   #grama-sintetica .flex,
   #capacho-personalizado .flex,
@@ -757,15 +772,21 @@
   #piso-fulget {
     padding: 40px 0;
   }
-  #grama-sintetica .area1, #grama-sintetica .area2,
-  #capacho-personalizado .area1, #capacho-personalizado .area2,
-  #piso-fulget .area1, #piso-fulget .area2 {
+  #grama-sintetica .area1,
+  #grama-sintetica .area2,
+  #capacho-personalizado .area1,
+  #capacho-personalizado .area2,
+  #piso-fulget .area1,
+  #piso-fulget .area2 {
     text-align: center;
     align-items: center;
   }
-  #grama-sintetica .area2 .btn-catalogo, #grama-sintetica .area2 .btn-orcamento,
-  #capacho-personalizado .area2 .btn-catalogo, #capacho-personalizado .area2 .btn-orcamento,
-  #piso-fulget .area2 .btn-catalogo, #piso-fulget .area2 .btn-orcamento {
+  #grama-sintetica .area2 .btn-catalogo,
+  #grama-sintetica .area2 .btn-orcamento,
+  #capacho-personalizado .area2 .btn-catalogo,
+  #capacho-personalizado .area2 .btn-orcamento,
+  #piso-fulget .area2 .btn-orcamento,
+  #piso-fulget .area2 .btn-orcamento {
     width: 100%;
     max-width: 320px;
   }
@@ -776,7 +797,7 @@
   #grama-sintetica .area3 .carrossel-gramas .next,
   #capacho-personalizado .area3 .carrossel-gramas .prev,
   #capacho-personalizado .area3 .carrossel-gramas .next,
-  #piso-fulget .area3 .carrossel-gramas .prev,
+  #piso-fulget .area3 .carrossel-gramas .next,
   #piso-fulget .area3 .carrossel-gramas .next {
     width: 34px;
     height: 34px;
@@ -786,4 +807,89 @@
   #piso-fulget .area1 .kicker {
     font-size: 1.2rem;
   }
+}
+
+#capacho {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 560px;
+  color: #fff;
+  /* Substitua o arquivo abaixo pela foto real do ambiente (varanda).
+       Enquanto não houver imagem, o gradiente serve de fallback. */
+  background:
+    linear-gradient(rgba(20, 16, 14, 0), rgba(20, 16, 14, 0)),
+    url(imagens/main/home/capacho/capacho-banner.webp) center/cover no-repeat;
+}
+
+#capacho h2 {
+  font-size: 50px;
+}
+
+#atuacao-capachos {
+  text-align: center;
+  padding: 40px 10px;
+  color: var(--main);
+}
+
+#atuacao-capachos h2:first-child {
+  text-align: center;
+  font-size: 50px;
+  margin: 0 0 40px 0;
+  color: #494949;
+}
+
+#atuacao-capachos .card img {
+  width: 360px;
+}
+
+#title {
+  text-align: center;
+  padding: 20px 40px;
+}
+
+#title h2 {
+  font-size: 50px;
+  color: var(--grey);
+  font-weight: 400;
+}
+
+#fuget-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 560px;
+  color: #fff;
+  /* Substitua o arquivo abaixo pela foto real do ambiente (varanda).
+       Enquanto não houver imagem, o gradiente serve de fallback. */
+  background:
+    linear-gradient(rgba(20, 16, 14, 0), rgba(20, 16, 14, 0)),
+    url(imagens/main/home/fulget/fulget-banner.webp) center/cover no-repeat;
+}
+
+#fuget-banner h2 {
+  font-size: 50px;
+}
+
+#atuacao-fulget {
+  text-align: center;
+  padding: 40px 10px;
+  color: var(--main);
+}
+
+#atuacao-fulget h2:first-child {
+  text-align: center;
+  font-size: 50px;
+  margin: 0 0 40px 0;
+  color: #494949;
+}
+
+#atuacao-fulget .card img {
+  width: 360px;
 }

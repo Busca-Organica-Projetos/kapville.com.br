@@ -31,7 +31,7 @@
                 <div class="flex">
                     <div class="corpo-artigo col-md-12 text-justify">
                         <a href="<?php echo $url."imagens/".$url_title."/".$url_title.".webp"; ?>" title="<?php echo $h1; ?>" class="img-fancy-pc">
-                            <img src="<?php echo $url."imagens/".$url_title."/".$url_title."-thumb.webp"; ?>" alt="<?php echo $h1; ?>" title="<?php echo $h1; ?>" class="img-right img-responsive">
+                            <img src="<?php echo $url."imagens/".$url_title."/".$url_title."-thumb.webp"; ?>" alt="<?php echo $h1; ?>" title="<?php echo $h1; ?>" class="img-right img-responsive" loading="lazy">
                         </a>
                         <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing elit. Perferendis ipsam ea tempora accusamus quasi numquam architecto sequi ducimus minima enim facere temporibus quaerat rerum laudantium vel quas, exercitationem impedit in perspiciatis voluptatum soluta. Aut deserunt pariatur, cum vitae obcaecati facilis assumenda sunt animi aspernatur, atque nihil itaque necessitatibus laudantium rerum accusamus. Pariatur minima veritatis quaerat, aliquid delectus saepe illo porro adipisci id ab ullam beatae commodi dignissimos qui debitis. Blanditiis delectus exercitationem nostrum dolores numquam rerum fugiat porro quaerat beatae ducimus, culpa reprehenderit temporibus ipsum facere suscipit, voluptatem earum cupiditate a sunt aliquam. Deleniti rerum dolores, a facilis, consequuntur incidunt?</p>
                         <?php include "includes/contato-meio-texto.php"; ?>
