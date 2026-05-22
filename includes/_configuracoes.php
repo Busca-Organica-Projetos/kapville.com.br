@@ -10,7 +10,7 @@
     ));
 
     // Principais Dados do Cliente
-    $nome_empresa = "Kapville Kapachos Revestimentos E Solucoes Ltda";
+    $nome_empresa = "Kapville";
     $slogan       = "CAPACHOOS E PISO";
     $emailContato = "kapvillekapachos@gmail.com";
 

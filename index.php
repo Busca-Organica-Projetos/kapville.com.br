@@ -1,7 +1,7 @@
 <?php
 $h1           = "Home";
-$title         = "Home";
-$description = ""; // Manter entre 130 a 160 caracteres
+$title         = "Soluções em Capachos e Pisos";
+$description = "A Kapville oferece capachos personalizados, tapetes, grama sintética e pisos fulget com qualidade, sofisticação e soluções sob medida para diversos ambientes.";
 $keywords    = $title;
 
 include "includes/_configuracoes.php";
