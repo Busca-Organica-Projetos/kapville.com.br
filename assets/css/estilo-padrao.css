@@ -553,8 +553,25 @@ main p {
 }
 
 main {
-  margin-top: 100px;
+  margin-top: 123px !important;
   transition: .25s ease-in-out;
+}
+
+@media screen and (max-width: 1274px) {
+  main {
+    margin-top: 181px !important;
+  }
+}
+
+@media screen and (max-width: 806px) {
+  main {
+    margin-top: 203px !important;
+  }
+}
+@media screen and (max-width: 769px) {
+  main {
+    margin-top: 92px !important;
+  }
 }
 
 section .container {

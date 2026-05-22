@@ -194,7 +194,7 @@ $borg->cssCompress(array(
                 <div class="flex">
                     <div class="col-lg-12 col-md-12">
                         <div class="box-text">
-                            <h2>Escolha nossa grama específica para animais de estimação para evitar manchas e odores</h2>
+                            <h2 class="title-banner">Escolha nossa grama específica para animais de estimação para evitar manchas e odores</h2>
                             <a class="banner-cta" href="https://api.whatsapp.com/send?phone=5547999897009" target="_blank" rel="noopener" data-click-track="WhatsApp - Banner Home">
                                 Tenho Interesse
                             </a>
@@ -310,7 +310,7 @@ $borg->cssCompress(array(
                 <div class="flex">
                     <div class="col-lg-12 col-md-12">
                         <div class="box-text">
-                            <h2>Um capacho personalizado é para expressar a sua personalidade e estilo, ou para promover a sua marca.</h2>
+                            <h2 class="title-banner">Um capacho personalizado é para expressar a sua personalidade e estilo, ou para promover a sua marca.</h2>
                             <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de saber mais sobre capachos personalizados.') ?>" target="_blank" rel="noopener" data-click-track="WhatsApp - capacho banner">
                                 Tenho Interesse
                             </a>
@@ -443,7 +443,7 @@ $borg->cssCompress(array(
                 <div class="flex">
                     <div class="col-lg-12 col-md-12">
                         <div class="box-text">
-                            <h2>Piso drenante Fulget é uma excelente opção para quem busca durabilidade, segurança e estética natural para áreas externas.</h2>
+                            <h2 class="title-banner">Piso drenante Fulget é uma excelente opção para quem busca durabilidade, segurança e estética natural para áreas externas.</h2>
                             <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e tenho interesse em pisos fuget.') ?>" target="_blank" rel="noopener" data-click-track="WhatsApp - capacho banner">
                                 Tenho Interesse
                             </a>

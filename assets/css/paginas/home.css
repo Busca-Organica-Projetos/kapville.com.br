@@ -416,7 +416,7 @@
   }
 
   #avaliacoes .card {
-    min-width: 105%;
+    min-width: 100%;
     height: 100%;
   }
 
@@ -469,7 +469,7 @@
 }
 
 #atuacao .card img {
-  width: 360px;
+  width: 100%;
 }
 
 /* ──────────────────────────────────────────────────────────────
@@ -843,7 +843,7 @@
 }
 
 #atuacao-capachos .card img {
-  width: 360px;
+  width: 100%;
 }
 
 #title {
@@ -891,5 +891,20 @@
 }
 
 #atuacao-fulget .card img {
-  width: 360px;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 475px) {
+  .title-banner {
+    font-size: 30px !important;
+  }  
+}
+@media screen and (max-width: 475px) {
+  #avaliacoes .box-title {
+    width: 100%;
+  }  
+  #avaliacoes .titulo {
+    font-size: 30px;
+  }  
 }
