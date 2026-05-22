@@ -436,23 +436,67 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  min-height: 560px;
-  background:
-    linear-gradient(rgba(20, 16, 14, 0), rgba(20, 16, 14, 0)),
-    url(imagens/main/home/grama-animais/grama-animais-banner.webp) center/cover no-repeat;
+  min-height: 500px;
+  padding: 60px 20px;
+  background-color: #1a4d2e;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(imagens/main/home/grama-animais/grama-animais-banner.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #grama-animais .box-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: var(--white, #fff);
 }
 
 #grama-animais .box-text h2 {
-  font-size: 48px;
+  font-size: clamp(1.6rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 28px;
+  max-width: 900px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
+}
+
+#grama-animais .box-text .banner-cta {
+  display: inline-block;
+  padding: 16px 36px;
+  background: #e85a2c;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+#grama-animais .box-text .banner-cta:hover {
+  background: #cf4a20;
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  #grama-animais {
+    min-height: 400px;
+    padding: 48px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  #grama-animais {
+    min-height: 260px;
+    padding: 36px 12px;
+  }
 }
 
 #atuacao {
@@ -587,7 +631,10 @@
   font-weight: 700;
   font-size: 1rem;
   text-align: center;
-  transition: transform 0.15s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
   margin-bottom: 12px;
   min-width: 200px;
 }
@@ -705,7 +752,10 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-  transition: background 0.2s ease, transform 0.15s ease, opacity 0.2s ease;
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease,
+    opacity 0.2s ease;
   z-index: 5;
 }
 
@@ -894,17 +944,34 @@
   width: 100%;
 }
 
-
 @media screen and (max-width: 475px) {
   .title-banner {
     font-size: 30px !important;
-  }  
+  }
 }
 @media screen and (max-width: 475px) {
   #avaliacoes .box-title {
     width: 100%;
-  }  
+  }
   #avaliacoes .titulo {
     font-size: 30px;
-  }  
+  }
+}
+@media screen and (max-width: 320px) {
+  #avaliacoes .font {
+    margin: 0;
+    font-size: 30px;
+  }
+  #avaliacoes .box-cards {
+    width: 120%;
+  }
+  #avaliacoes .card .header {
+    flex-wrap: wrap;
+  }
+  #atuacao .titulo {
+    font-size: 40px !important;
+  }
+  #title h2{
+    font-size: 40px !important;
+  }
 }

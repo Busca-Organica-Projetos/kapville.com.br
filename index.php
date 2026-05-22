@@ -77,7 +77,7 @@ $borg->cssCompress(array(
         <section id="avaliacoes">
             <div class="container">
                 <div class="flex">
-                    <div class="col-lg-12 col-md-12">
+                    <div class="col-lg-12 col-md-12 ">
                         <div class="box-title">
                             <h2 class="titulo">
                                 O melhor atendimento e a máxima qualidade.<br>
@@ -225,7 +225,7 @@ $borg->cssCompress(array(
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <h2>Soluções Inteligentes para Seu Espaço</h2>
+                        <h2 class="titulo">Soluções Inteligentes para Seu Espaço</h2>
                     </div>
                 </div>
             </div>
