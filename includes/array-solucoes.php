@@ -1,6 +1,6 @@
 <?php
 // $url = "http://localhost/_Dev/kapville.com.br/";
- $url = "http://www.aprov.buscaorganica.com.br/kapville.com.br/";
+ $url = "https://aprov.buscaorganica.com.br/kapville.com.br/";
 $linkWpp = "https://wa.me/5547988407007?text=";
 $produtos = [
     "Desumidificador de ar Desidrat Compact Íon – Ionizador – Branco – Bivolt – Thermomatic" => [
