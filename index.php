@@ -195,7 +195,7 @@ $borg->cssCompress(array(
                     <div class="col-lg-12 col-md-12">
                         <div class="box-text">
                             <h2 class="title-banner">Escolha nossa grama específica para animais de estimação para evitar manchas e odores</h2>
-                            <a class="banner-cta" href="https://api.whatsapp.com/send?phone=5547999897009" target="_blank" rel="noopener" data-click-track="WhatsApp - Banner Home">
+                            <a class="banner-cta" href="https://api.whatsapp.com/send?phone=5547999897009" target="_blank" rel="noopener" data-click-track="WhatsApp - Home - grama-animais">
                                 Tenho Interesse
                             </a>
                         </div>
@@ -444,7 +444,7 @@ $borg->cssCompress(array(
                     <div class="col-lg-12 col-md-12">
                         <div class="box-text">
                             <h2 class="title-banner">Piso drenante Fulget é uma excelente opção para quem busca durabilidade, segurança e estética natural para áreas externas.</h2>
-                            <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e tenho interesse em pisos fuget.') ?>" target="_blank" rel="noopener" data-click-track="WhatsApp - capacho banner">
+                            <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e tenho interesse em pisos fuget.') ?>" target="_blank" rel="noopener" data-click-track="WhatsApp - fuget-banner - home">
                                 Tenho Interesse
                             </a>
                         </div>

@@ -131,27 +131,47 @@
         if (atual) setActive(atual);
     }
 
-    /* ─── 4) Sidebar só aparece quando #produtos está em vista ──
+    /* ─── 4) Sidebar só aparece dentro da seção #produtos ────────
        Em desktop a sidebar é position:fixed — sem controle, ela
        ficaria sobreposta ao banner (topo) e ao footer (rodapé).
-       Esse observer adiciona .sidebar-hidden quando #produtos
-       sai da viewport, e remove quando reentra. */
+       Usamos DOIS observers:
+         a) #produtos  → sidebar deve aparecer
+         b) <footer>   → sidebar deve sumir (prioridade sobre #produtos)
+       O estado final é calculado em atualizarSidebar(). */
     var produtos = document.querySelector('#produtos');
-    if (produtos && 'IntersectionObserver' in window) {
-        var visObserver = new IntersectionObserver(function (entries) {
-            entries.forEach(function (en) {
-                if (en.isIntersecting) {
-                    sidebar.classList.remove('sidebar-hidden');
-                } else {
-                    sidebar.classList.add('sidebar-hidden');
-                }
-            });
+    var footer   = document.querySelector('footer');
+
+    if ('IntersectionObserver' in window && produtos) {
+        var produtosVisivel = false;
+        var footerVisivel   = false;
+
+        function atualizarSidebar() {
+            if (produtosVisivel && !footerVisivel) {
+                sidebar.classList.remove('sidebar-hidden');
+            } else {
+                sidebar.classList.add('sidebar-hidden');
+            }
+        }
+
+        /* a) Observer de #produtos */
+        new IntersectionObserver(function (entries) {
+            entries.forEach(function (en) { produtosVisivel = en.isIntersecting; });
+            atualizarSidebar();
         }, {
-            /* Considera "visível" quando pelo menos uma fração mínima
-               de #produtos está dentro da viewport. */
             threshold: 0,
             rootMargin: '-80px 0px -80px 0px'
-        });
-        visObserver.observe(produtos);
+        }).observe(produtos);
+
+        /* b) Observer do <footer> — assim que o topo do footer entra
+              na viewport, footerVisivel = true → esconde a sidebar. */
+        if (footer) {
+            new IntersectionObserver(function (entries) {
+                entries.forEach(function (en) { footerVisivel = en.isIntersecting; });
+                atualizarSidebar();
+            }, {
+                threshold: 0,
+                rootMargin: '0px 0px 0px 0px'
+            }).observe(footer);
+        }
     }
 })();
