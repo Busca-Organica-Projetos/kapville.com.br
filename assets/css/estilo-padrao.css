@@ -190,8 +190,7 @@ header .header-container-main {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-
-  width: 90%;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 
@@ -609,7 +608,7 @@ main {
 
 @media screen and (max-width: 1326px) {
   main {
-    margin-top: 192px !important;
+    margin-top: 128px !important;
   }
 }
 
