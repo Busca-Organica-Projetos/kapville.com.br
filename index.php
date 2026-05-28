@@ -68,7 +68,7 @@ $borg->cssCompress(array(
                     </div>
                     <div class="col-lg-7">
                         <div class="box-img">
-                            <img src="<?php echo $url; ?>imagens/main/home/quem-somos/fachada.webp" alt="Fachada da loja Kapville em Joinville" loading="lazy">
+                            <img src="<?php echo $url; ?>imagens/main/home/quem-somos/fachada.webp" alt="Fachada da loja Kapville em Joinville" loading="lazy" fetchpriority="high">
                         </div>
                     </div>
                 </div>
@@ -86,7 +86,7 @@ $borg->cssCompress(array(
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-card">
-                                <img class="img-responsive" src="<?php $url ?>imagens/main/home/atuacao/residencial.webp" alt="residencial">
+                                <img class="img-responsive" src="<?php $url ?>imagens/main/home/atuacao/residencial.webp" alt="residencial" fetchpriority="high">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 descricao-card">
                                 <h2>Residencial</h2>
