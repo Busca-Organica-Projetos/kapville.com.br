@@ -602,7 +602,7 @@ main p {
 a { transition: color 0.2s var(--ease); }
 
 main {
-  margin-top: 0 !important;
+  margin-top: 55px !important;
   transition: .25s ease-in-out;
 }
 
