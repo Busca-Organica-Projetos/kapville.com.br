@@ -71,16 +71,48 @@
 }
 
 :root {
-  --font: 'Roboto', sans-serif;
+  --font: 'Poppins', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  /* Marca */
   --main: #007F91;
   --main-strong: #00545f;
+  --main-soft: #e6f3f5;
   --secondary: #F6AB1A;
   --secondary-strong: #d49619;
-  --grey: #7A7A7A;
+  --secondary-soft: #fef3dc;
+
+  /* Neutros */
   --black: #000000;
+  --ink: #1a2226;
+  --ink-2: #3a4750;
+  --grey: #6b7680;
+  --grey-2: #9aa3ac;
+  --line: #e6e9ec;
+  --surface: #ffffff;
+  --surface-2: #f7f8fa;
   --white: #FFF;
   --dark-white: #F0F0F0;
+
+  /* Sombras */
+  --shadow-sm: 0 1px 2px rgba(16, 24, 32, 0.06);
+  --shadow-md: 0 8px 24px rgba(16, 24, 32, 0.08);
+  --shadow-lg: 0 18px 48px rgba(16, 24, 32, 0.12);
+
+  /* Raios e curvas */
   --bradius: 16px;
+  --bradius-sm: 8px;
+  --bradius-lg: 24px;
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 .pd-5 {
@@ -548,9 +580,27 @@ h1,
 h2,
 h3,
 h4,
-main p {  
+main p {
   margin: 15px 0;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--ink);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.18;
+}
+
+h2 { font-weight: 700; }
+h3 { font-weight: 600; }
+h4 { font-weight: 600; }
+
+main p {
+  color: var(--ink-2);
+  line-height: 1.65;
+}
+
+a { transition: color 0.2s var(--ease); }
 
 main {
   margin-top: 123px !important;
@@ -596,20 +646,30 @@ label {
 }
 
 .btn-more a {
-  color: var(--black);
+  display: inline-block;
+  color: var(--white);
   background: var(--main);
   border: 2px solid var(--main);
-  border-radius: var(--bradius);
-  font-size: 1.3rem;
-  padding: 9px 22px;
-  transition: .25s ease-in-out;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
+  padding: 12px 28px;
+  box-shadow: var(--shadow-sm);
+  transition:
+    background 0.25s var(--ease),
+    color 0.25s var(--ease),
+    border-color 0.25s var(--ease),
+    transform 0.25s var(--ease),
+    box-shadow 0.25s var(--ease);
 }
 
 .btn-more a:hover {
-  color: var(--white);
-  background: none;
-  padding: 12px 25px;
-  transform: translateY(-10px);
+  color: var(--main);
+  background: var(--white);
+  border-color: var(--main);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
 }
 
 .fa-phone-volume {
@@ -734,31 +794,80 @@ ul.marked {
   color: var(--main);
 }
 
-/* ─── CTA WhatsApp ────────────────────────────────────────────── */
+
+
 .banner-cta {
-  display: inline-block;
-  padding: 16px 38px;
-  background: #e85a2c;
-  color: #fff;
-  font-size: 1.05rem;
-  font-weight: 700;
-  text-decoration: none;
-  border-radius: 4px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
-  transition:
-    background 0.2s ease,
-    transform 0.15s ease,
-    box-shadow 0.2s ease;
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid var(--secondary);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-wrap: nowrap;
+  background: var(--secondary);
+  color: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  width: 100%;
 }
 
 .banner-cta:hover {
-  background: #cf4a20;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.32);
   color: #fff;
+  background: var(--secondary);
+  box-shadow: var(--black) 0px 8px 20px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
-.banner-cta:active {
-  transform: translateY(0);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+.banner-cta:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+.banner-cta::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+button:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
 }
