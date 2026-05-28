@@ -86,7 +86,7 @@ $borg->cssCompress(array(
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-card">
-                                <img class="img-responsive" src="<?php $url ?>imagens/main/home/atuacao/residencial.webp" alt="residencial" fetchpriority="high">
+                                <img class="img-responsive" src="<?php $url ?>imagens/main/home/atuacao/residencial.webp" alt="residencial" fetchpriority="high" loading="lazy">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 descricao-card">
                                 <h2>Residencial</h2>
@@ -100,7 +100,7 @@ $borg->cssCompress(array(
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-card">
-                                <img class="img-responsive" src="<?php $url ?>imagens/main/home/atuacao/animais.webp" alt="residencial">
+                                <img class="img-responsive" src="<?php $url ?>imagens/main/home/atuacao/animais.webp" alt="residencial" loading="lazy">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 descricao-card">
                                 <h2>Para Pets</h2>
@@ -114,7 +114,7 @@ $borg->cssCompress(array(
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-card">
-                                <img class="img-responsive" src="<?php $url ?>imagens/main/home/atuacao/esportivo.webp" alt="residencial">
+                                <img class="img-responsive" src="<?php $url ?>imagens/main/home/atuacao/esportivo.webp" alt="residencial" loading="lazy">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 descricao-card">
                                 <h2>Esportivo</h2>
@@ -128,7 +128,7 @@ $borg->cssCompress(array(
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-card">
-                                <img class="img-responsivo" src="<?php $url ?>imagens/main/home/atuacao/comercial.webp" alt="residencial">
+                                <img class="img-responsivo" src="<?php $url ?>imagens/main/home/atuacao/comercial.webp" alt="residencial" loading="lazy">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 descricao-card">
                                 <h2>Comercial</h2>
@@ -227,7 +227,7 @@ $borg->cssCompress(array(
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-card">
-                                <img class="img-responsive" src="<?php $url ?>imagens/main/home/capacho/residencial.webp" alt="residencial">
+                                <img class="img-responsive" src="<?php $url ?>imagens/main/home/capacho/residencial.webp" alt="residencial" loading="lazy">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 descricao-card">
                                 <h2>Residencial</h2>
@@ -241,7 +241,7 @@ $borg->cssCompress(array(
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-card">
-                                <img class="img-responsive" src="<?php $url ?>imagens/main/home/capacho/escolas.webp" alt="residencial">
+                                <img class="img-responsive" src="<?php $url ?>imagens/main/home/capacho/escolas.webp" alt="residencial" loading="lazy">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 descricao-card">
                                 <h2>Escolas</h2>
@@ -255,7 +255,7 @@ $borg->cssCompress(array(
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-card">
-                                <img class="img-responsivo" src="<?php $url ?>imagens/main/home/capacho/comercial.webp" alt="residencial">
+                                <img class="img-responsivo" src="<?php $url ?>imagens/main/home/capacho/comercial.webp" alt="residencial" loading="lazy">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 descricao-card">
                                 <h2>Comercial</h2>
@@ -364,7 +364,7 @@ $borg->cssCompress(array(
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-card">
-                                <img class="img-responsive" src="<?php $url ?>imagens/main/home/fulget/atuacao-fulget/residencial.webp" alt="residencial">
+                                <img class="img-responsive" src="<?php $url ?>imagens/main/home/fulget/atuacao-fulget/residencial.webp" alt="residencial" loading="lazy">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 descricao-card">
                                 <h2>Residencial</h2>
@@ -378,7 +378,7 @@ $borg->cssCompress(array(
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-card">
-                                <img class="img-responsive" src="<?php $url ?>imagens/main/home/fulget/atuacao-fulget/comercial.webp" alt="residencial">
+                                <img class="img-responsive" src="<?php $url ?>imagens/main/home/fulget/atuacao-fulget/comercial.webp" alt="residencial" loading="lazy">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 descricao-card">
                                 <h2>Comercial</h2>
@@ -392,7 +392,7 @@ $borg->cssCompress(array(
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-card">
-                                <img class="img-responsivo" src="<?php $url ?>imagens/main/home/fulget/atuacao-fulget/externo.webp" alt="residencial">
+                                <img class="img-responsivo" src="<?php $url ?>imagens/main/home/fulget/atuacao-fulget/externo.webp" alt="residencial" loading="lazy">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 descricao-card">
                                 <h2>Área Externa</h2>
