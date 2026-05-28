@@ -640,7 +640,7 @@
   align-items: stretch;
   justify-self: center;
   margin-top: 10px;
-  height: auto;
+  height: 450px;
   width: 100%;
   background: var(--surface);
   border: 1px solid var(--line);
