@@ -978,7 +978,7 @@
 #piso-fulget .area3 .carrossel-gramas .next,
 #capacho-personalizado .area3 .carrossel-gramas .prev,
 #capacho-personalizado .area3 .carrossel-gramas .next,
-#piso-fulget .area3 .carrossel-gramas .next {
+#piso-fulget .area3 .carrossel-gramas .prev {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
