@@ -232,7 +232,7 @@ $borg->cssCompress(array(
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 descricao-card">
                                 <h2>Residencial</h2>
                                 <p>Os capachos residenciais da Kapville unem funcionalidade, estilo e personalidade para a entrada da sua casa. Desenvolvidos com materiais de alta qualidade, ajudam a manter o ambiente mais limpo enquanto valorizam a decoração com um toque exclusivo e sofisticado.</p>
-                                <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] ?>" target="_blank" rel="noopener" data-click-track="Solicitar Orçamento - Capacho Residencial - Home">
+                                <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de solicitar um orçamento de capacho para área residencial') ?>" target="_blank" rel="noopener" data-click-track="Solicitar Orçamento - Capacho Residencial - Home">
                                     Solicitar Orçamento
                                 </a>
                             </div>
@@ -246,7 +246,7 @@ $borg->cssCompress(array(
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 descricao-card">
                                 <h2>Escolas</h2>
                                 <p>Os capachos para escolas da Kapville são ideais para proporcionar mais limpeza, organização e segurança nos ambientes educacionais. Além de funcionais, podem ser personalizados com nomes, cores e identidade visual, valorizando a entrada com um toque profissional e acolhedor.</p>
-                                <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] ?>" target="_blank" rel="noopener" data-click-track="Solicitar Orçamento - Capacho Escolas - Home">
+                                <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de solicitar um orçamento de capacho para escolas') ?>" target="_blank" rel="noopener" data-click-track="Solicitar Orçamento - Capacho Escolas - Home">
                                     Solicitar Orçamento
                                 </a>
                             </div>
@@ -260,7 +260,7 @@ $borg->cssCompress(array(
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 descricao-card">
                                 <h2>Comercial</h2>
                                 <p>Os capachos comerciais da Kapville são desenvolvidos para empresas que desejam unir limpeza, organização e fortalecimento da marca. Com alta durabilidade e possibilidade de personalização, oferecem uma excelente apresentação logo na entrada do ambiente comercial..</p>
-                                <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] ?>" target="_blank" rel="noopener" data-click-track="Solicitar Orçamento - Capacho Comercial - Home">
+                                <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de solicitar um orçamento de capacho para área comercial') ?>" target="_blank" rel="noopener" data-click-track="Solicitar Orçamento - Capacho Comercial - Home">
                                     Solicitar Orçamento
                                 </a>
                             </div>
@@ -369,7 +369,7 @@ $borg->cssCompress(array(
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 descricao-card">
                                 <h2>Residencial</h2>
                                 <p>Os pisos fulget residenciais da Kapville são ideais para quem busca sofisticação, resistência e um acabamento moderno para áreas externas e internas. Com visual elegante e excelente durabilidade, proporcionam mais beleza, conforto e valorização para ambientes residenciais.</p>
-                                <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] ?>" target="_blank" rel="noopener" data-click-track="Solicitar Orçamento - Fulget Residencial - Home">
+                                <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de solicitar um orçamento de piso fulget para área residencial') ?>" target="_blank" rel="noopener" data-click-track="Solicitar Orçamento - Fulget Residencial - Home">
                                     Solicitar Orçamento
                                 </a>
                             </div>
@@ -383,7 +383,7 @@ $borg->cssCompress(array(
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 descricao-card">
                                 <h2>Comercial</h2>
                                 <p>Os pisos fulget comerciais da Kapville oferecem resistência, sofisticação e excelente acabamento para empresas, lojas e ambientes corporativos. Ideais para áreas de grande circulação, unem durabilidade, segurança e visual moderno para valorizar qualquer espaço comercial.</p>
-                                <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] ?>" target="_blank" rel="noopener" data-click-track="Solicitar Orçamento - Fulget Comercial - Home">
+                                <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de solicitar um orçamento de piso fulget para área comercial') ?>" target="_blank" rel="noopener" data-click-track="Solicitar Orçamento - Fulget Comercial - Home">
                                     Solicitar Orçamento
                                 </a>
                             </div>
@@ -397,7 +397,7 @@ $borg->cssCompress(array(
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 descricao-card">
                                 <h2>Área Externa</h2>
                                 <p>Os pisos fulget para áreas externas da Kapville combinam resistência, sofisticação e excelente acabamento para ambientes ao ar livre. Ideais para calçadas, varandas, jardins e áreas de lazer, oferecem alta durabilidade, visual moderno e fácil manutenção.</p>
-                                <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] ?>" target="_blank" rel="noopener" data-click-track="Solicitar Orçamento - Fulget Área Externa - Home">
+                                <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de solicitar um orçamento de piso fulget para área externa') ?>" target="_blank" rel="noopener" data-click-track="Solicitar Orçamento - Fulget Área Externa - Home">
                                     Solicitar Orçamento
                                 </a>
                             </div>
