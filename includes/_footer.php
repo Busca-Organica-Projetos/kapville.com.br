@@ -17,7 +17,7 @@
                 <a href="<?php echo $url; ?>" title="<?php echo $nome_empresa; ?>"><img src="<?php echo $url.$logo_cliente; ?>" alt="<?php echo $nome_empresa; ?>" title="<?php echo $nome_empresa; ?>" class="img-responsive" loading="lazy"></a>
             </div>
             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-                <h4>Institucional</h4>
+                <h2>Institucional</h2>
                 <ul>
                     <li><i class="fa-solid fa-angle-right info"></i><a href="<?php echo $url; ?>" title="Página inicial">Home</a></li>
                     <li><i class="fa-solid fa-angle-right info"></i><a href="<?php echo $url; ?>#about" title="Sobre Nós">Sobre Nós</a></li>
