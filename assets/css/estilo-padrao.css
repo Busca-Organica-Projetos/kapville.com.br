@@ -603,13 +603,13 @@ main p {
 a { transition: color 0.2s var(--ease); }
 
 main {
-  margin-top: 123px !important;
+  margin-top: 0 !important;
   transition: .25s ease-in-out;
 }
 
-@media screen and (max-width: 1274px) {
+@media screen and (max-width: 1326px) {
   main {
-    margin-top: 181px !important;
+    margin-top: 192px !important;
   }
 }
 

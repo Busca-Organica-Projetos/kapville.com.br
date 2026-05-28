@@ -18,10 +18,11 @@
     color: #FFF;
 }
 
-#home{
+#home {
     text-transform: uppercase;
     background: var(--secondary);
-    padding: 40px 0;
+    padding: 60px 0 40px;
+    margin-top: 192px;
     color: #FFF;
     border-bottom: 7px solid var(--main-strong);
     box-shadow: 0 0 12px 0 rgba(0,0,0,0.7);
