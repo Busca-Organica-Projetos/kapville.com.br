@@ -27,7 +27,7 @@
                 </ul>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <h4>Contato</h4>
+                <h2>Contato</h2>
                 <ul>
                     <li><i class="fa-solid fa-phone-volume"></i><a data-click-track="Telefone - Contato - Rodapé" href="<?php echo $unidades[1]['link_tel']; ?>" title="Clique e Ligue"><?php echo $unidades[1]['tel']; ?></a></li>
                     <li><i class="fa-brands fa-whatsapp"></i><a data-click-track="WhatsApp - Contato - Rodapé" href="<?php echo $unidades[1]['link_wpp']; ?>" title="WhatsApp" target="_blank"><?php echo $unidades[1]['wpp']; ?></a></li>
@@ -35,7 +35,7 @@
                 </ul>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <h4>Localização</h4>
+                <h2>Localização</h2>
                 <ul>
                     <li><i class="fa-solid fa-location-dot"></i><a href="<?php echo $unidades[1]['link_maps']; ?>" title="Acesse no Google Maps" target="_blank"><?php echo $unidades[1]['rua'].' - '.$unidades[1]['bairro'].' - '.$unidades[1]['cidade'].' / '.$unidades[1]['uf'].' - CEP: '.$unidades[1]['cep']; ?></a></li>
                 </ul>
