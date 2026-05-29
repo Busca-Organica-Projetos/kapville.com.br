@@ -1,7 +1,7 @@
 <?php
 $h1           = "Home";
 $title         = "Soluções em Capachos e Pisos";
-$description = "A Kapville oferece capachos personalizados, tapetes, grama sintética e pisos fulget com qualidade, sofisticação e soluções sob medida para diversos ambientes.";
+$description = "A Kapville oferece capachos personalizados, tapetes, grama sintética e pisos fuget com qualidade, sofisticação e soluções sob medida para diversos ambientes.";
 $keywords    = $title;
 
 include "includes/_configuracoes.php";
@@ -30,7 +30,7 @@ $borg->cssCompress(array(
                                     Revestimentos
                                 </h1>
                                 <p class="banner-subtitulo">
-                                    Capachos personalizados, grama sintética, piso Fulget e
+                                    Capachos personalizados, grama sintética, piso Fuget e
                                     revestimentos com qualidade e sofisticação para seu projeto.
                                 </p>
                                 <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de falar com um especialista.') ?>" target="_blank" rel="noopener" data-click-track="Fale com o Especialista - Banner - Home">
@@ -58,7 +58,7 @@ $borg->cssCompress(array(
                                 durabilidade e personalização para seu ambiente!
                             </p>
                             <p class="produtos">
-                                <a href="<?php $url ?>#atuacao" data-click-track="Grama Sintética - Quem Somos - Home">Grama sintética</a> | <a href="<?php $url ?>#atuacao-capachos" data-click-track="Capachos - Quem Somos - Home">Capachos</a> | <a href="<?php $url ?>#atuacao-fulget" data-click-track="Piso Fulget - Quem Somos - Home">Piso Fuget</a>
+                                <a href="<?php $url ?>#atuacao" data-click-track="Grama Sintética - Quem Somos - Home">Grama sintética</a> | <a href="<?php $url ?>#atuacao-capachos" data-click-track="Capachos - Quem Somos - Home">Capachos</a> | <a href="<?php $url ?>#atuacao-fuget" data-click-track="Piso Fuget - Quem Somos - Home">Piso Fuget</a>
                             </p>
                             <div class="info-loja">
                                 <p class="loja-titulo">LOJA DE TAPETES EM JOINVILE</p>
@@ -353,23 +353,23 @@ $borg->cssCompress(array(
                 </div>
             </div>
         </section>
-        <section id="atuacao-fulget" class="atuacao">
+        <section id="atuacao-fuget" class="atuacao">
             <div class="container">
                 <div class="flex">
                     <div class="col-lg-12 col-md-12">
                         <div class="box-text">
-                            <h2 class="title-banner">Acabamento Sofisticado em Piso Fulget</h2>
+                            <h2 class="title-banner">Acabamento Sofisticado em Piso Fuget</h2>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-card">
-                                <img class="img-responsive" src="<?php $url ?>imagens/main/home/fulget/atuacao-fulget/residencial.webp" alt="residencial" loading="lazy">
+                                <img class="img-responsive" src="<?php $url ?>imagens/main/home/fuget/atuacao-fuget/residencial.webp" alt="residencial" loading="lazy">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 descricao-card">
                                 <h2>Residencial</h2>
-                                <p>Os pisos fulget residenciais da Kapville são ideais para quem busca sofisticação, resistência e um acabamento moderno para áreas externas e internas. Com visual elegante e excelente durabilidade, proporcionam mais beleza, conforto e valorização para ambientes residenciais.</p>
-                                <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de solicitar um orçamento de piso fulget para área residencial') ?>" target="_blank" rel="noopener" data-click-track="Solicitar Orçamento - Fulget Residencial - Home">
+                                <p>Os pisos fuget residenciais da Kapville são ideais para quem busca sofisticação, resistência e um acabamento moderno para áreas externas e internas. Com visual elegante e excelente durabilidade, proporcionam mais beleza, conforto e valorização para ambientes residenciais.</p>
+                                <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de solicitar um orçamento de piso fuget para área residencial') ?>" target="_blank" rel="noopener" data-click-track="Solicitar Orçamento - Fuget Residencial - Home">
                                     Solicitar Orçamento
                                 </a>
                             </div>
@@ -378,12 +378,12 @@ $borg->cssCompress(array(
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-card">
-                                <img class="img-responsive" src="<?php $url ?>imagens/main/home/fulget/atuacao-fulget/comercial.webp" alt="residencial" loading="lazy">
+                                <img class="img-responsive" src="<?php $url ?>imagens/main/home/fuget/atuacao-fuget/comercial.webp" alt="residencial" loading="lazy">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 descricao-card">
                                 <h2>Comercial</h2>
-                                <p>Os pisos fulget comerciais da Kapville oferecem resistência, sofisticação e excelente acabamento para empresas, lojas e ambientes corporativos. Ideais para áreas de grande circulação, unem durabilidade, segurança e visual moderno para valorizar qualquer espaço comercial.</p>
-                                <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de solicitar um orçamento de piso fulget para área comercial') ?>" target="_blank" rel="noopener" data-click-track="Solicitar Orçamento - Fulget Comercial - Home">
+                                <p>Os pisos fuget comerciais da Kapville oferecem resistência, sofisticação e excelente acabamento para empresas, lojas e ambientes corporativos. Ideais para áreas de grande circulação, unem durabilidade, segurança e visual moderno para valorizar qualquer espaço comercial.</p>
+                                <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de solicitar um orçamento de piso fuget para área comercial') ?>" target="_blank" rel="noopener" data-click-track="Solicitar Orçamento - Fuget Comercial - Home">
                                     Solicitar Orçamento
                                 </a>
                             </div>
@@ -392,12 +392,12 @@ $borg->cssCompress(array(
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-card">
-                                <img class="img-responsivo" src="<?php $url ?>imagens/main/home/fulget/atuacao-fulget/externo.webp" alt="residencial" loading="lazy">
+                                <img class="img-responsivo" src="<?php $url ?>imagens/main/home/fuget/atuacao-fuget/externo.webp" alt="residencial" loading="lazy">
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 descricao-card">
                                 <h2>Área Externa</h2>
-                                <p>Os pisos fulget para áreas externas da Kapville combinam resistência, sofisticação e excelente acabamento para ambientes ao ar livre. Ideais para calçadas, varandas, jardins e áreas de lazer, oferecem alta durabilidade, visual moderno e fácil manutenção.</p>
-                                <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de solicitar um orçamento de piso fulget para área externa') ?>" target="_blank" rel="noopener" data-click-track="Solicitar Orçamento - Fulget Área Externa - Home">
+                                <p>Os pisos fuget para áreas externas da Kapville combinam resistência, sofisticação e excelente acabamento para ambientes ao ar livre. Ideais para calçadas, varandas, jardins e áreas de lazer, oferecem alta durabilidade, visual moderno e fácil manutenção.</p>
+                                <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de solicitar um orçamento de piso fuget para área externa') ?>" target="_blank" rel="noopener" data-click-track="Solicitar Orçamento - Fuget Área Externa - Home">
                                     Solicitar Orçamento
                                 </a>
                             </div>
@@ -422,7 +422,7 @@ $borg->cssCompress(array(
             "download_17_1x.webp"
         ];
         ?>
-        <section id="piso-fulget">
+        <section id="piso-fuget">
             <div class="container">
                 <div class="flex">
 
@@ -430,9 +430,9 @@ $borg->cssCompress(array(
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <div class="area1">
                             <h2 class="kicker">PISO FUGET</h2>
-                            <h2 class="titulo">Piso Fulget Beleza Natural e Alta Resistência para Seu Projeto!</h2>
+                            <h2 class="titulo">Piso Fuget Beleza Natural e Alta Resistência para Seu Projeto!</h2>
                             <p>
-                                <strong style="color: #fff;">Durabilidade e Estilo para Áreas Externas e Internas! </strong>O Piso Fulget é a escolha ideal para quem busca um acabamento Personalize com seu <strong style="color: #fff;"> elegante, antiderrapante, drenante e extremamente resistente,</strong> perfeito para calçadas, áreas de lazer, fachadas e muito mais.
+                                <strong style="color: #fff;">Durabilidade e Estilo para Áreas Externas e Internas! </strong>O Piso Fuget é a escolha ideal para quem busca um acabamento Personalize com seu <strong style="color: #fff;"> elegante, antiderrapante, drenante e extremamente resistente,</strong> perfeito para calçadas, áreas de lazer, fachadas e muito mais.
                             </p>
                         </div>
                     </div>
@@ -447,8 +447,8 @@ $borg->cssCompress(array(
                                 O objetivo é oferecer ao mercado alta qualidade estética e técnica aumentando o ciclo de vida dos produtos naturais. Oferecendo revestimentos Com diversificada gama de minerais naturais, nuances de cor e forma, asseguramos inovação e elevados padrões de qualidade.
                             </p>
                             <p class="local">PISO DRENANTE FUGET JOINVILLE</p>
-                            <a class="btn-catalogo" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de visualizar o catálogo de pisos fuget'); ?>" target="_blank" rel="noopener" data-click-track="Visualizar Catálogo - Piso Fulget - Home">Visualizar Catálogo</a>
-                            <a class="btn-orcamento" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de solicitar um orçamento de pisos fuget') ?>" target="_blank" rel="noopener" data-click-track="Orçamento - Piso Fulget - Home">
+                            <a class="btn-catalogo" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de visualizar o catálogo de pisos fuget'); ?>" target="_blank" rel="noopener" data-click-track="Visualizar Catálogo - Piso Fuget - Home">Visualizar Catálogo</a>
+                            <a class="btn-orcamento" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de solicitar um orçamento de pisos fuget') ?>" target="_blank" rel="noopener" data-click-track="Orçamento - Piso Fuget - Home">
                                 Orçamento
                             </a>
                         </div>
@@ -463,7 +463,7 @@ $borg->cssCompress(array(
                                     <div class="carrossel-track">
                                         <?php foreach ($capachosPersonalizados as $idx => $img): ?>
                                             <div class="slide">
-                                                <img src="<?php echo $url; ?>imagens/main/home/fulget/array/<?= $img ?>" alt="Capacho personalizado <?= $idx + 1 ?>" loading="<?= $idx === 0 ? 'eager' : 'lazy' ?>">
+                                                <img src="<?php echo $url; ?>imagens/main/home/fuget/array/<?= $img ?>" alt="Capacho personalizado <?= $idx + 1 ?>" loading="<?= $idx === 0 ? 'eager' : 'lazy' ?>">
                                             </div>
                                         <?php endforeach; ?>
                                     </div>

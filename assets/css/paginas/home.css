@@ -729,7 +729,7 @@
 
 #grama-sintetica,
 #capacho-personalizado,
-#piso-fulget {
+#piso-fuget {
   padding: 72px 0;
   background:
     radial-gradient(circle at 88% 12%, rgba(246, 171, 26, 0.18) 0%, transparent 38%),
@@ -741,7 +741,7 @@
 
 #grama-sintetica::before,
 #capacho-personalizado::before,
-#piso-fulget::before {
+#piso-fuget::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -755,11 +755,11 @@
 
 #grama-sintetica .container,
 #capacho-personalizado .container,
-#piso-fulget .container { position: relative; z-index: 1; }
+#piso-fuget .container { position: relative; z-index: 1; }
 
 #grama-sintetica .flex,
 #capacho-personalizado .flex,
-#piso-fulget .flex {
+#piso-fuget .flex {
   align-items: stretch;
   gap: 20px;
 }
@@ -767,13 +767,13 @@
 /* ─── Área 1: kicker + título + parágrafo ────────────────────── */
 #grama-sintetica .area1,
 #capacho-personalizado .area1,
-#piso-fulget .area1 {
+#piso-fuget .area1 {
   padding: 10px 0;
 }
 
 #grama-sintetica .area1 .kicker,
 #capacho-personalizado .area1 .kicker,
-#piso-fulget .area1 .kicker {
+#piso-fuget .area1 .kicker {
   display: inline-block;
   font-size: 0.78rem;
   font-weight: 700;
@@ -789,7 +789,7 @@
 
 #grama-sintetica .area1 .titulo,
 #capacho-personalizado .area1 .titulo,
-#piso-fulget .area1 .titulo {
+#piso-fuget .area1 .titulo {
   font-size: clamp(1.7rem, 2.8vw, 2.15rem);
   font-weight: 800;
   line-height: 1.1;
@@ -800,7 +800,7 @@
 
 #grama-sintetica .area1 p,
 #capacho-personalizado .area1 p,
-#piso-fulget .area1 p {
+#piso-fuget .area1 p {
   font-size: 1rem;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.85);
@@ -809,7 +809,7 @@
 
 #grama-sintetica .area1 p strong,
 #capacho-personalizado .area1 p strong,
-#piso-fulget .area1 p strong {
+#piso-fuget .area1 p strong {
   color: var(--secondary, #f6ab1a);
   font-weight: 700;
 }
@@ -817,7 +817,7 @@
 /* ─── Área 2: descrição extra + botões ───────────────────────── */
 #grama-sintetica .area2,
 #capacho-personalizado .area2,
-#piso-fulget .area2 {
+#piso-fuget .area2 {
   padding: 10px 0;
   display: flex;
   flex-direction: column;
@@ -826,7 +826,7 @@
 
 #grama-sintetica .area2 p,
 #capacho-personalizado .area2 p,
-#piso-fulget .area2 p {
+#piso-fuget .area2 p {
   font-size: 0.95rem;
   line-height: 1.55;
   color: #fff;
@@ -835,14 +835,14 @@
 
 #grama-sintetica .area2 p strong,
 #capacho-personalizado .area2 p strong,
-#piso-fulget .area2 p strong {
+#piso-fuget .area2 p strong {
   font-weight: 700;
   color: #fff;
 }
 
 #grama-sintetica .area2 .local,
 #capacho-personalizado .area2 .local,
-#piso-fulget .area2 .local {
+#piso-fuget .area2 .local {
   font-size: 1rem;
   font-weight: 700;
   color: #fff;
@@ -852,11 +852,11 @@
 
 #grama-sintetica .area2 .btn-catalogo,
 #grama-sintetica .area2 .btn-orcamento,
-#piso-fulget .area2 .btn-orcamento,
+#piso-fuget .area2 .btn-orcamento,
 #capacho-personalizado .area2 .btn-catalogo,
 #capacho-personalizado .area2 .btn-orcamento,
-#piso-fulget .area2 .btn-orcamento,
-#piso-fulget .area2 .btn-catalogo {
+#piso-fuget .area2 .btn-orcamento,
+#piso-fuget .area2 .btn-catalogo {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -878,7 +878,7 @@
 
 #grama-sintetica .area2 .btn-catalogo,
 #capacho-personalizado .area2 .btn-catalogo,
-#piso-fulget .area2 .btn-catalogo {
+#piso-fuget .area2 .btn-catalogo {
   background: transparent;
   color: #fff;
   border: 1.5px solid rgba(255, 255, 255, 0.4);
@@ -887,7 +887,7 @@
 
 #grama-sintetica .area2 .btn-catalogo:hover,
 #capacho-personalizado .area2 .btn-catalogo:hover,
-#piso-fulget .area2 .btn-catalogo:hover {
+#piso-fuget .area2 .btn-catalogo:hover {
   background: rgba(255, 255, 255, 0.12);
   border-color: rgba(255, 255, 255, 0.7);
   transform: translateY(-2px);
@@ -896,7 +896,7 @@
 
 #grama-sintetica .area2 .btn-orcamento,
 #capacho-personalizado .area2 .btn-orcamento,
-#piso-fulget .area2 .btn-orcamento {
+#piso-fuget .area2 .btn-orcamento {
   background: var(--secondary);
   color: #1a2226;
   font-size: 1.02rem;
@@ -907,7 +907,7 @@
 
 #grama-sintetica .area2 .btn-orcamento:hover,
 #capacho-personalizado .area2 .btn-orcamento:hover,
-#piso-fulget .area2 .btn-orcamento:hover {
+#piso-fuget .area2 .btn-orcamento:hover {
   background: var(--secondary-strong);
   border-color: var(--secondary-strong);
   transform: translateY(-3px);
@@ -918,7 +918,7 @@
 /* ─── Área 3: carrossel ──────────────────────────────────────── */
 #grama-sintetica .area3,
 #capacho-personalizado .area3,
-#piso-fulget .area3 {
+#piso-fuget .area3 {
   height: 100%;
   min-height: 380px;
   border-radius: var(--bradius);
@@ -929,7 +929,7 @@
 
 #grama-sintetica .area3 .carrossel-gramas,
 #capacho-personalizado .area3 .carrossel-gramas,
-#piso-fulget .area3 .carrossel-gramas {
+#piso-fuget .area3 .carrossel-gramas {
   position: relative;
   width: 100%;
   height: 100%;
@@ -937,7 +937,7 @@
 
 #grama-sintetica .area3 .carrossel-viewport,
 #capacho-personalizado .area3 .carrossel-viewport,
-#piso-fulget .area3 .carrossel-viewport {
+#piso-fuget .area3 .carrossel-viewport {
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -946,7 +946,7 @@
 
 #grama-sintetica .area3 .carrossel-track,
 #capacho-personalizado .area3 .carrossel-track,
-#piso-fulget .area3 .carrossel-track {
+#piso-fuget .area3 .carrossel-track {
   display: flex;
   align-items: stretch;
   height: 100%;
@@ -956,7 +956,7 @@
 
 #grama-sintetica .area3 .carrossel-track .slide,
 #capacho-personalizado .area3 .carrossel-track .slide,
-#piso-fulget .area3 .carrossel-track .slide {
+#piso-fuget .area3 .carrossel-track .slide {
   flex: 0 0 100%;
   max-width: 100%;
   height: 100%;
@@ -965,7 +965,7 @@
 
 #grama-sintetica .area3 .carrossel-track .slide img,
 #capacho-personalizado .area3 .carrossel-track .slide img,
-#piso-fulget .area3 .carrossel-track .slide img {
+#piso-fuget .area3 .carrossel-track .slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -975,10 +975,10 @@
 /* Botões prev / next */
 #grama-sintetica .area3 .carrossel-gramas .prev,
 #grama-sintetica .area3 .carrossel-gramas .next,
-#piso-fulget .area3 .carrossel-gramas .next,
+#piso-fuget .area3 .carrossel-gramas .next,
 #capacho-personalizado .area3 .carrossel-gramas .prev,
 #capacho-personalizado .area3 .carrossel-gramas .next,
-#piso-fulget .area3 .carrossel-gramas .prev {
+#piso-fuget .area3 .carrossel-gramas .prev {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -1003,40 +1003,40 @@
 
 #grama-sintetica .area3 .carrossel-gramas .prev,
 #capacho-personalizado .area3 .carrossel-gramas .prev,
-#piso-fulget .area3 .carrossel-gramas .prev {
+#piso-fuget .area3 .carrossel-gramas .prev {
   left: 10px;
 }
 
 #grama-sintetica .area3 .carrossel-gramas .next,
 #capacho-personalizado .area3 .carrossel-gramas .next,
-#piso-fulget .area3 .carrossel-gramas .next {
+#piso-fuget .area3 .carrossel-gramas .next {
   right: 10px;
 }
 
 #grama-sintetica .area3 .carrossel-gramas .prev:hover,
 #grama-sintetica .area3 .carrossel-gramas .next:hover,
-#piso-fulget .area3 .carrossel-gramas .next:hover,
+#piso-fuget .area3 .carrossel-gramas .next:hover,
 #capacho-personalizado .area3 .carrossel-gramas .prev:hover,
 #capacho-personalizado .area3 .carrossel-gramas .next:hover,
-#piso-fulget .area3 .carrossel-gramas .next:hover {
+#piso-fuget .area3 .carrossel-gramas .next:hover {
   background: var(--secondary-strong, #d49619);
 }
 
 #grama-sintetica .area3 .carrossel-gramas .prev:active,
 #grama-sintetica .area3 .carrossel-gramas .next:active,
-#piso-fulget .area3 .carrossel-gramas .next:active,
+#piso-fuget .area3 .carrossel-gramas .next:active,
 #capacho-personalizado .area3 .carrossel-gramas .prev:active,
 #capacho-personalizado .area3 .carrossel-gramas .next:active,
-#piso-fulget .area3 .carrossel-gramas .next:active {
+#piso-fuget .area3 .carrossel-gramas .next:active {
   transform: translateY(-50%) scale(0.92);
 }
 
 #grama-sintetica .area3 .carrossel-gramas .prev svg,
 #grama-sintetica .area3 .carrossel-gramas .next svg,
-#piso-fulget .area3 .carrossel-gramas .next svg,
+#piso-fuget .area3 .carrossel-gramas .next svg,
 #capacho-personalizado .area3 .carrossel-gramas .prev svg,
 #capacho-personalizado .area3 .carrossel-gramas .next svg,
-#piso-fulget .area3 .carrossel-gramas .next svg {
+#piso-fuget .area3 .carrossel-gramas .next svg {
   display: block;
   pointer-events: none;
 }
@@ -1047,13 +1047,13 @@
 @media (max-width: 991px) {
   #grama-sintetica .flex,
   #capacho-personalizado .flex,
-  #piso-fulget .flex {
+  #piso-fuget .flex {
     flex-wrap: wrap;
     gap: 24px;
   }
   #grama-sintetica .area3,
   #capacho-personalizado .area3,
-  #piso-fulget .area3 {
+  #piso-fuget .area3 {
     min-height: 320px;
   }
 
@@ -1064,15 +1064,15 @@
 @media (max-width: 768px) {
   #grama-sintetica,
   #capacho-personalizado,
-  #piso-fulget {
+  #piso-fuget {
     padding: 40px 0;
   }
   #grama-sintetica .area1,
   #grama-sintetica .area2,
   #capacho-personalizado .area1,
   #capacho-personalizado .area2,
-  #piso-fulget .area1,
-  #piso-fulget .area2 {
+  #piso-fuget .area1,
+  #piso-fuget .area2 {
     text-align: center;
     align-items: center;
   }
@@ -1080,8 +1080,8 @@
   #grama-sintetica .area2 .btn-orcamento,
   #capacho-personalizado .area2 .btn-catalogo,
   #capacho-personalizado .area2 .btn-orcamento,
-  #piso-fulget .area2 .btn-orcamento,
-  #piso-fulget .area2 .btn-orcamento {
+  #piso-fuget .area2 .btn-orcamento,
+  #piso-fuget .area2 .btn-orcamento {
     width: 100%;
     max-width: 320px;
   }
@@ -1164,14 +1164,14 @@
   #grama-sintetica .area3 .carrossel-gramas .next,
   #capacho-personalizado .area3 .carrossel-gramas .prev,
   #capacho-personalizado .area3 .carrossel-gramas .next,
-  #piso-fulget .area3 .carrossel-gramas .next,
-  #piso-fulget .area3 .carrossel-gramas .next {
+  #piso-fuget .area3 .carrossel-gramas .next,
+  #piso-fuget .area3 .carrossel-gramas .next {
     width: 34px;
     height: 34px;
   }
   #grama-sintetica .area1 .kicker,
   #capacho-personalizado .area1 .kicker,
-  #piso-fulget .area1 .kicker {
+  #piso-fuget .area1 .kicker {
     font-size: 1.2rem;
   }
 }
