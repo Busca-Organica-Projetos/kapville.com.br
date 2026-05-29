@@ -16,7 +16,7 @@
                 <ul class="menu-list gap-10">
                     <li class="<?php echo $canonical ==  $url ? 'pagina-focus' : ''; ?>"><a href="<?php echo $url; ?>" title="Página inicial">Kapville</a></li>
                     <li class="<?php echo $canonical ==  $url . '#capacho-personalizado' ? 'pagina-focus' : ''; ?>"><a href="<?php echo $url; ?>#capacho-personalizado" title="Capacho Personalizado">Capacho Personalizado</a></li>
-                    <li class=""><a href="<?php echo $url; ?>#fuget-banner" title="Piso Fuget">Piso Fuget</a></li>
+                    <li class=""><a href="<?php echo $url; ?>#atuacao-fuget" title="Piso Fuget">Piso Fuget</a></li>
                     <li class=""><a href="<?php echo $url; ?>#grama-sintetica" title="Grama Sintética">Grama Sintética</a></li>
                     <li class=""><a href="<?php echo $url; ?>solucoes" title="Soluções">Soluções</a></li>
                     <li class="<?php echo $canonical ==  $url . 'contato' ? 'pagina-focus' : ''; ?>"><a href="<?php echo $url; ?>contato" title="Contato">Contato</a></li>
