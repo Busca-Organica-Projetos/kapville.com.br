@@ -99,14 +99,16 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    btnPrev.addEventListener('click', function () {
+    btnPrev.addEventListener('click', function (e) {
 
+        e.preventDefault();
         anterior();
         iniciarAuto();
     });
 
-    btnNext.addEventListener('click', function () {
+    btnNext.addEventListener('click', function (e) {
 
+        e.preventDefault();
         proximo();
         iniciarAuto();
     });
