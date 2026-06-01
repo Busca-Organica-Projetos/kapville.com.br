@@ -61,7 +61,7 @@ $borg->cssCompress(array(
                                 <a href="<?php $url ?>#atuacao" data-click-track="Grama Sintética - Quem Somos - Home">Grama sintética</a> | <a href="<?php $url ?>#atuacao-capachos" data-click-track="Capachos - Quem Somos - Home">Capachos</a> | <a href="<?php $url ?>#atuacao-fuget" data-click-track="Piso Fuget - Quem Somos - Home">Piso Fuget</a>
                             </p>
                             <div class="info-loja">
-                                <p class="loja-titulo">LOJA DE TAPETES EM JOINVILE</p>
+                                <p class="loja-titulo">LOJA DE TAPETES EM JOINVILLE</p>
                                 <p class="loja-endereco">Rua Max Colin 2138 | América | Joinville</p>
                             </div>
                         </div>
@@ -104,7 +104,7 @@ $borg->cssCompress(array(
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 descricao-card">
                                 <h2>Para Pets</h2>
-                                <p>Escolha nossa grama sintética específica para animais de estimação e garanta mais conforto, praticidade e higiene para o seu ambiente. Desenvolvida para evitar manchas e odores, oferece fácil limpeza, alta durabilidade e um espaço agradável para os pets brincar em com segurança.</p>
+                                <p>Escolha nossa grama sintética específica para animais de estimação e garanta mais conforto, praticidade e higiene para o seu ambiente. Desenvolvida para evitar manchas e odores, oferece fácil limpeza, alta durabilidade e um espaço agradável para os pets brincarem com segurança.</p>
                                 <a class="banner-cta" href="<?= $unidades[1]['link_wpp']  . urlencode('Olá, vim pelo site e gostaria de solicitar um orçamento de grama sintética para pet')?>" target="_blank" rel="noopener" data-click-track="Solicitar Orçamento - Grama Pets - Home">
                                     Solicitar Orçamento
                                 </a>
@@ -119,7 +119,7 @@ $borg->cssCompress(array(
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 descricao-card">
                                 <h2>Esportivo</h2>
                                 <p>A grama sintética esportiva da Kapville é desenvolvida para oferecer alta resistência, segurança e excelente desempenho em áreas esportivas. Ideal para quadras, campos e espaços recreativos, proporciona conforto, durabilidade e baixa necessidade de manutenção.</p>
-                                <a class="banner-cta" href="<?= $unidades[1]['link_wpp']  . urlencode('Olá, vim pelo site e gostaria de solicitar um orçamento de grama sintética para área espotiva')?>" target="_blank" rel="noopener" data-click-track="Solicitar Orçamento - Grama Esportiva - Home">
+                                <a class="banner-cta" href="<?= $unidades[1]['link_wpp']  . urlencode('Olá, vim pelo site e gostaria de solicitar um orçamento de grama sintética para área esportiva')?>" target="_blank" rel="noopener" data-click-track="Solicitar Orçamento - Grama Esportiva - Home">
                                     Solicitar Orçamento
                                 </a>
                             </div>
@@ -259,7 +259,7 @@ $borg->cssCompress(array(
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 descricao-card">
                                 <h2>Comercial</h2>
-                                <p>Os capachos comerciais da Kapville são desenvolvidos para empresas que desejam unir limpeza, organização e fortalecimento da marca. Com alta durabilidade e possibilidade de personalização, oferecem uma excelente apresentação logo na entrada do ambiente comercial..</p>
+                                <p>Os capachos comerciais da Kapville são desenvolvidos para empresas que desejam unir limpeza, organização e fortalecimento da marca. Com alta durabilidade e possibilidade de personalização, oferecem uma excelente apresentação logo na entrada do ambiente comercial.</p>
                                 <a class="banner-cta" href="<?= $unidades[1]['link_wpp'] . urlencode('Olá, vim pelo site e gostaria de solicitar um orçamento de capacho para área comercial') ?>" target="_blank" rel="noopener" data-click-track="Solicitar Orçamento - Capacho Comercial - Home">
                                     Solicitar Orçamento
                                 </a>
@@ -432,7 +432,7 @@ $borg->cssCompress(array(
                             <h2 class="kicker">PISO FUGET</h2>
                             <h2 class="titulo">Piso Fuget Beleza Natural e Alta Resistência para Seu Projeto!</h2>
                             <p>
-                                <strong style="color: #fff;">Durabilidade e Estilo para Áreas Externas e Internas! </strong>O Piso Fuget é a escolha ideal para quem busca um acabamento Personalize com seu <strong style="color: #fff;"> elegante, antiderrapante, drenante e extremamente resistente,</strong> perfeito para calçadas, áreas de lazer, fachadas e muito mais.
+                                <strong style="color: #fff;">Durabilidade e Estilo para Áreas Externas e Internas! </strong>O Piso Fuget é a escolha ideal para quem busca um acabamento <strong style="color: #fff;">elegante, antiderrapante, drenante e extremamente resistente,</strong> perfeito para calçadas, áreas de lazer, fachadas e muito mais.
                             </p>
                         </div>
                     </div>
@@ -511,7 +511,7 @@ $borg->cssCompress(array(
                             "img"        => "perfil1",
                             "nome"       => "Renato Ferreira",
                             "data"       => "2025-02-13",
-                            "comentario" => "Estou muito satisfeito, pessoal super educado e atenciosos. Super recomendo. Com preços imbatíveis.",
+                            "comentario" => "Estou muito satisfeito, pessoal super educado e atencioso. Super recomendo. Preços imbatíveis.",
                         ],
                         2 => [
                             "img"        => "perfil2",
@@ -535,11 +535,11 @@ $borg->cssCompress(array(
                             "img"        => "perfil5",
                             "nome"       => "Kiki Rotert",
                             "data"       => "2024-07-05",
-                            "comentario" => "Exclente empresa, entregam os produtos dentro do prazo pré estabelecido. Melhor custo benefício do mercado! Super indico!",
+                            "comentario" => "Excelente empresa, entregam os produtos dentro do prazo pré-estabelecido. Melhor custo-benefício do mercado! Super indico!",
                         ],
                         6 => [
                             "img"        => "perfil6",
-                            "nome"       => "jaidete vianna",
+                            "nome"       => "Jaidete Vianna",
                             "data"       => "2024-06-19",
                             "comentario" => "Super recomendo a Kapville. Atendimento, instalação, pontualidade na entrega impecáveis. Estou muito satisfeita!!!",
                         ],
@@ -547,7 +547,7 @@ $borg->cssCompress(array(
                             "img"        => "perfil7",
                             "nome"       => "Diego Breguedo",
                             "data"       => "2024-11-12",
-                            "comentario" => "Ótima loja, produtos revestimentos diversificadas com atendimento muito bom, pós venda sensacional..super indico a Kapville.",
+                            "comentario" => "Ótima loja, produtos e revestimentos diversificados, com atendimento muito bom e pós-venda sensacional. Super indico a Kapville.",
                         ],
                         8 => [
                             "img"        => "perfil8",
@@ -559,7 +559,7 @@ $borg->cssCompress(array(
                             "img"        => "perfil9",
                             "nome"       => "Rodinei Mendes",
                             "data"       => "2024-06-13",
-                            "comentario" => "Empresa seria, com excelente profissional, recomendo a todos. Sucesso a vocês.",
+                            "comentario" => "Empresa séria, com excelentes profissionais, recomendo a todos. Sucesso a vocês.",
                         ],
                     ];
                     ?>

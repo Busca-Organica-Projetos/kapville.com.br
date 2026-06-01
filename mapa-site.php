@@ -55,7 +55,7 @@ $borg->cssCompress(array(
                             <input name="Local do Form" value="Formulário Mapa do site: <?php echo $canonical; ?>" type="hidden">
                             <input name="url" value="<?php echo $url;?>" type="hidden">
 
-                            <button type="submit" class="btn btn-default btn-block" data-emailsReceberEnvio='<?php echo $emailContato; ?>' data-emailsReceberCopia="" data-emailsReceberCopiaOculta="" data-siteCliente="<?php echo $nome_empresa; ?>" data-ajax="Contato atraves do site">Enviar <i class="fa fa-share"></i>
+                            <button type="submit" class="btn btn-default btn-block" data-emailsReceberEnvio='<?php echo $emailContato; ?>' data-emailsReceberCopia="" data-emailsReceberCopiaOculta="" data-siteCliente="<?php echo $nome_empresa; ?>" data-ajax="Contato através do site">Enviar <i class="fa fa-share"></i>
                             </button>
                         </div>
                     </form>
